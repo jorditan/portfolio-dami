@@ -2,7 +2,7 @@ import fotoReproductor from '../assets/img/fotoReproductor.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import Botones from './Botones'
+// import Botones from './Botones'
 
 function Reproductor() {
 
@@ -20,7 +20,7 @@ function Reproductor() {
                     <p className='text-lg font-semibold text-[#303030]'>¿Querés escuchar una canción de bienvenida?</p>
                </div>
                
-               <Botones/>
+               {/* <Botones/> */}
 
                <p className='nombreDeLaCancion'></p>
 

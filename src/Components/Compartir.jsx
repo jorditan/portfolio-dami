@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Modal } from "keep-react";
 import { FaCreativeCommonsShare } from "react-icons/fa6";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Alerta from "./Alert";
 
 function BotonCompartir() {
      const [showModal, setShowModal] = useState(false);

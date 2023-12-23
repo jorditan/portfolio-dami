@@ -94,7 +94,7 @@ header {
   display: none;
 }
 .navBar .navBrand {
-  width: 30%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: start;
@@ -264,6 +264,17 @@ header {
     font-size: 22px;
   }
 }
+@media screen and (max-width: 583px) {
+  .navBrand {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBrand img {
+    height: 80%;
+    width: 100%;
+  }
+}
 /*----------------------------- SECCION INICIO ----------------------*/
 #inicio {
   min-height: 100vh;
@@ -388,16 +399,21 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1em;
 }
 .contenedorInfo .info {
   position: fixed;
-  height: auto;
+  height: 3em;
   width: 55%;
   background-color: #303030;
   border-radius: 35px;
   align-items: center;
   justify-content: space-evenly;
   opacity: 0.8;
+}
+.contenedorInfo .info .botonInfo {
+  display: none;
+  color: #fafafa;
 }
 .contenedorInfo .info .redesList, .contenedorInfo .info .switchs, .contenedorInfo .info .contenedorModal {
   gap: 20px;
@@ -411,4 +427,32 @@ header {
 }
 .contenedorInfo .info .redesList .redesItem .redesIcon:hover {
   transform: scale(1.1);
+}
+.contenedorInfo .info .alerta {
+  position: absolute;
+}
+
+@media screen and (max-width: 802px) {
+  .contenedorInfo .info {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 646px) {
+  .contenedorInfo .info .redesList .redesItem .redesIcon {
+    font-size: 20px;
+  }
+  .contenedorInfo .info .contenedorModal {
+    height: 100%;
+  }
+  .contenedorInfo .info .contenedorModal button {
+    height: 100%;
+    margin: 0;
+  }
+  .contenedorInfo .info .contenedorModal button span {
+    font-size: 12px;
+    padding: 0;
+  }
+  .contenedorInfo .info .switchs {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

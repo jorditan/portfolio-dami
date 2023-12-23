@@ -1,4 +1,4 @@
-import fotoReproductor from '../assets/img/fotoReproductor.jpg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
