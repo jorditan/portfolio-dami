@@ -475,15 +475,17 @@ header {
      width: 100%;
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: flex-end;
      padding-top: 1em;
+     position: sticky;
+     bottom: 0;
+     padding-bottom: 1em;
 
      .info {
-          position: fixed;
           height: 3em;
           width: 55%;
           background-color: #303030;
-          border-radius: 35px;
+          border-radius: 10px;
           align-items: center;
           justify-content: space-evenly;
           opacity: .8;

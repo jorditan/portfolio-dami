@@ -17,7 +17,7 @@ function Reproductor() {
 
                <div className="contenedorTextoRep flex column">
                     <p className='text-lg  font-semibold text-[#303030] '>¡Bienvenidos a mi portfolio!</p>
-                    <p className='text-lg font-semibold text-[#303030]'>¿Querés escuchar una canción de bienvenida?</p>
+                    <p className='text-lg font-semibold text-[#303030]'>¿Quéres conocerme más? Deslizá hacia abajo.</p>
                </div>
                
                {/* <Botones/> */}
