@@ -1,0 +1,414 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.row {
+  flex-direction: row;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fafafa;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #303030;
+}
+
+.invisible {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+.column {
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.navBarNegra {
+  background-color: #303030;
+}
+
+.navBarBlanca {
+  background-color: #fafafa;
+}
+
+.sombra {
+  box-shadow: var(--sombra);
+}
+
+/*-------------------- ESTILOS NAVBAR ------------------------------*/
+header {
+  height: 9vh;
+  position: relative;
+  z-index: 1000;
+}
+
+.navBar {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  height: inherit;
+  padding: 0.6em;
+  background-color: transparent;
+}
+.navBar .menuHamburguesa {
+  display: none;
+}
+.navBar .navBrand {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  padding-left: 2em;
+}
+.navBar .navBrand img {
+  height: 100%;
+}
+.navBar .navList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navBar .navList .navItem {
+  color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar .navList .navItem .navLink {
+  cursor: pointer;
+  margin: 0 6px 0 10px;
+  color: #303030;
+  font-size: 16px;
+  transition: 0.5s all ease-in-out;
+}
+.navBar .navList .navItem .iconNav {
+  font-size: 16px;
+  transition: 0.4s all ease-in-out;
+}
+.navBar .navList .navItem:hover .iconNav {
+  transform: translateY(-3px);
+}
+.navBar .navList .navItem:hover .navLink {
+  transform: translateY(-3px);
+}
+.navBar .navList .dropDownMenu .dropDown {
+  display: flex;
+  transition: 0.2s all ease-out;
+  flex-direction: column;
+  top: 90%;
+  position: absolute;
+  background-color: #303030;
+  z-index: 1000;
+  border-radius: 3px;
+  width: 10em;
+  height: 3.5em;
+  justify-content: center;
+}
+.navBar .navList .dropDownMenu .dropDown li {
+  width: 70%;
+}
+.navBar .navList .dropDownMenu .dropDown li .navLink {
+  display: block;
+  cursor: pointer;
+  padding-left: 10px;
+  color: #fafafa;
+  font-size: 15px;
+  transition: 0.3s all ease-in-out;
+}
+.navBar .navList .dropDownMenu .dropDown li .navLink:hover {
+  color: #cacaca;
+}
+
+@media screen and (max-width: 903px) {
+  .navBar {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navBar .menuHamburguesa {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 5px;
+    gap: 10px;
+    transform-origin: 0px 100%;
+  }
+  .navBar .menuHamburguesa .linea1 {
+    width: 40px;
+    transition: all 300ms;
+    height: 4px;
+    background-color: #303030;
+    border-radius: 5px;
+  }
+  .navBar .menuHamburguesa .linea2 {
+    transition: all 300ms;
+    width: 30px;
+    height: 4px;
+    background-color: #303030;
+    border-radius: 5px;
+  }
+  .navBar .menuHamburguesa .linea3 {
+    transition: all 300ms;
+    width: 20px;
+    height: 4px;
+    background-color: #303030;
+    border-radius: 5px;
+  }
+  .navBar .menuHamburguesa.pulsado {
+    margin-right: 10px;
+  }
+  .navBar .menuHamburguesa.pulsado .linea1 {
+    transform: rotate(45deg) translate(18px, 0px);
+  }
+  .navBar .menuHamburguesa.pulsado .linea2 {
+    width: 40px;
+    opacity: 0;
+    margin-left: -30px;
+  }
+  .navBar .menuHamburguesa.pulsado .linea3 {
+    width: 40px;
+    transform: rotate(-45deg) translate(18px, -2px);
+  }
+  .navBar .navBrand {
+    width: 100%;
+  }
+  .navBar .navList {
+    display: none;
+    transition: 0.4s ease-out;
+    background-color: #303030;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    right: 0;
+    color: #fafafa;
+    font-size: 1.5em;
+  }
+  .navBar .navList.invisible {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .navBar .navList.visible {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+  }
+  .navBar .navList .navItem {
+    color: #fafafa;
+  }
+  .navBar .navList .navItem .navLink {
+    color: #fafafa;
+  }
+  .navBar .navList .dropDownMenu {
+    width: 100%;
+    justify-content: center;
+  }
+  .navBar .navList .dropDownMenu .dropDown {
+    top: 80%;
+    left: 22%;
+    background-color: #fafafa;
+    width: 60%;
+    height: auto;
+    margin: 1em 0 1em 0;
+  }
+  .navBar .navList .dropDownMenu .dropDown li .navLink {
+    color: #303030;
+    font-size: 22px;
+  }
+}
+/*----------------------------- SECCION INICIO ----------------------*/
+#inicio {
+  min-height: 100vh;
+  background: radial-gradient(157.62% 121.69% at 57.47% -13.28%, #FFF 37.73%, #6F6F6F 88.13%, #303030 100%);
+  flex-shrink: 0;
+}
+
+.contenedorTitulo {
+  width: 100%;
+  padding-top: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorTitulo #titulo {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px;
+  width: 20ch;
+  animation: escribiendo 2s steps(20), puntero 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes escribiendo {
+  from {
+    width: 0;
+  }
+}
+@keyframes puntero {
+  0% {
+    border: transparent;
+  }
+}
+.contenedorReproductor {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contenedorReproductor .contenedorImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  height: 250px;
+  border-radius: 30px;
+  width: 30%;
+  margin: 1em 0 0 0;
+}
+.contenedorReproductor .contenedorImagen img {
+  border-radius: 46px;
+  padding: 1em;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0px 39px 100px -54px rgb(48, 48, 48);
+}
+.contenedorReproductor .contenedorTextoRep {
+  padding: 2em 0 1em 0;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorReproductor .botones {
+  width: 50%;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+.contenedorReproductor .botones .icon {
+  font-size: 30px;
+  color: #303030;
+  transition: 0.5s all ease-out;
+}
+.contenedorReproductor .botones .icon:hover {
+  color: #222222;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 880px) {
+  #titulo {
+    font-size: 3rem;
+    width: auto;
+  }
+}
+@media screen and (max-width: 646px) {
+  .contenedorTitulo {
+    align-items: flex-start;
+    padding-left: 2em;
+    gap: 10px;
+  }
+  .contenedorTitulo #titulo {
+    width: 100%;
+    font-size: 1.7rem;
+    text-align: left;
+  }
+  .contenedorTitulo p {
+    text-align: left;
+    font-size: 12px;
+    width: 80%;
+  }
+  .contenedorReproductor .contenedorImagen {
+    width: 70%;
+    height: 200px;
+  }
+  .contenedorReproductor .contenedorTextoRep {
+    padding: 2em 0 0 2em;
+  }
+  .contenedorReproductor .contenedorTextoRep p {
+    width: 100%;
+    font-size: 1em;
+    text-align: left;
+  }
+  .contenedorReproductor .botones {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1em 0 0 2em;
+  }
+}
+.contenedorInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorInfo .info {
+  position: fixed;
+  height: auto;
+  width: 55%;
+  background-color: #303030;
+  border-radius: 35px;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0.8;
+}
+.contenedorInfo .info .redesList, .contenedorInfo .info .switchs, .contenedorInfo .info .contenedorModal {
+  gap: 20px;
+  width: 33%;
+  justify-content: center;
+}
+.contenedorInfo .info .redesList .redesItem .redesIcon {
+  font-size: 25px;
+  color: #fafafa;
+  transition: 0.4s ease-out;
+}
+.contenedorInfo .info .redesList .redesItem .redesIcon:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=index.css.map */
