@@ -89,16 +89,20 @@ i {
      box-shadow: var(--sombra);
 }
 
+section {
+     padding-top: 3em;
+}
+
 /*-------------------- ESTILOS NAVBAR ------------------------------*/
 
 header {
      height: 9vh;
-     position: relative;
+     position: fixed;
      z-index: 1000;
 }
 
 .navBar {
-     position: sticky;
+     position: fixed;
      width: 100%;
      display: flex;
      height: inherit;
@@ -114,7 +118,7 @@ header {
           width: 100%;
           height: 100%;
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           padding-left: 2em;
 
           img {
@@ -144,6 +148,7 @@ header {
                }
 
                .iconNav {
+                    color: #303030;
                     font-size: 16px;
                     transition: .4s all ease-in-out;
                }
@@ -335,9 +340,17 @@ header {
 /*----------------------------- SECCION INICIO ----------------------*/
 
 #inicio {
-     min-height: 100vh;
-     background: radial-gradient(157.62% 121.69% at 57.47% -13.28%, #FFF 37.73%, #6F6F6F 88.13%, #303030 100%);
+     height: auto;
      flex-shrink: 0;
+     background-image: linear-gradient(to right bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+     .contenedorAlert {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          right: 2%;
+          top: 40%;
+          transition: .5s all ease-in;
+     }
 }
 
 .contenedorTitulo {
@@ -396,7 +409,7 @@ header {
      }
 
      .contenedorTextoRep {
-          padding: 2em 0 1em 0;
+          padding: 2em 0 1em 2em;
           justify-content: center;
           align-items: center;
      }
@@ -454,10 +467,10 @@ header {
           }
 
           .contenedorTextoRep {
-               padding: 2em 0 0 2em; 
+               align-items: flex-start;
 
                p {
-                    width: 100%;
+                    width: 80%;
                     font-size: 1em;
                     text-align: left;
                }
@@ -515,12 +528,7 @@ header {
                     }
                }
           }
-
-          .alerta {
-               position: absolute;
-          }
      }
-
 }
 
 @media screen and (max-width: 802px) {
@@ -558,6 +566,34 @@ header {
                .switchs {
                     display: none;
                }
+          }
+     }
+}
+
+
+/*------------------------- SECCION ABOUT ----------------*/
+
+#about {
+     min-height: 100vh;
+     padding: 2em 4em 0 4em;
+     background-image: linear-gradient(to left bottom, #747474, #949494, #b5b5b5, #d7d7d7, #fafafa);
+
+     .contenedorInfoAbout {
+          height: 30em;
+
+          .presentacion {
+               width: 50%;
+               align-items: flex-start;
+               justify-content: center;
+               gap: 20px;
+
+               h1 {
+                    padding-bottom: .5em;
+               }
+          }
+
+          .contenedorImagen {
+               width: 50%;
           }
      }
 }

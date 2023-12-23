@@ -4,18 +4,17 @@ import BotonSwitch from './BotonSwitch';
 import { FaInfo } from "react-icons/fa";
 
 
-function InfoMain() {
+function InfoMain({ mostrarAlerta }) {
      return (
           <div className="contenedorInfo">
                <div className="info flex">
                     <FaInfo className='botonInfo' />
                     <div className="switchs flex">
-                         <BotonSwitch/>
-                         <BotonSwitch/>
+                         <BotonSwitch />
+                         <BotonSwitch />
                     </div>
                     <Redes />
-                    <BotonCompartir />
-
+                    <BotonCompartir mostrarAlerta={mostrarAlerta} />
                </div>
           </div>
      );

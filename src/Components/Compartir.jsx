@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Button, Modal } from "keep-react";
 import { FaCreativeCommonsShare } from "react-icons/fa6";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import Alerta from "./Alert";
 
-function BotonCompartir() {
+function BotonCompartir({ mostrarAlerta }) {
      const [showModal, setShowModal] = useState(false);
+
      const onClick = () => {
           setShowModal(!showModal);
      };
@@ -33,7 +33,7 @@ function BotonCompartir() {
                          </Button>
                          <Button type="slate" onClick={onClick}>
                               <CopyToClipboard text={window.location.href}>
-                                   <p>Copía la URL</p>
+                                   <p onClick={() => (mostrarAlerta())}>Copía la URL</p>
                               </CopyToClipboard>
                          </Button>
                     </Modal.Footer>
