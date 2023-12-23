@@ -23,11 +23,12 @@
 
 html::-webkit-scrollbar {
   width: 5px;
-  background-color: #fafafa;
+  background-color: #303030;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #303030;
+  background-color: #d9d9d9;
+  height: 4px;
 }
 
 .invisible {
@@ -282,7 +283,7 @@ header {
 }
 /*----------------------------- SECCION INICIO ----------------------*/
 #inicio {
-  height: auto;
+  min-height: 50vh;
   flex-shrink: 0;
   background-image: linear-gradient(to right bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
 }
@@ -407,6 +408,14 @@ header {
     padding: 1em 0 0 2em;
   }
 }
+@media screen and (max-width: 370px) {
+  .contenedorTitulo {
+    padding-left: 1em;
+  }
+  .contenedorReproductor .contenedorTextoRep {
+    padding-left: 1em;
+  }
+}
 .contenedorInfo {
   width: 100%;
   display: flex;
@@ -488,4 +497,24 @@ header {
 }
 #about .contenedorInfoAbout .contenedorImagen {
   width: 50%;
+}
+
+@media screen and (max-width: 858px) {
+  #about {
+    padding: 2em 2em 0 2em;
+  }
+  #about .contenedorInfoAbout {
+    flex-direction: column;
+  }
+  #about .contenedorInfoAbout .presentacion {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  #about {
+    padding: 2em 2em 0 1em;
+  }
+  #about .contenedorInfoAbout .presentacion {
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
