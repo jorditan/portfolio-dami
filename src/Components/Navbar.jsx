@@ -6,20 +6,23 @@ import { useState } from "react";
 
 import DropDown from '../Components/DropDown';
 
-function NavBar(props) {
+function NavBar() {
      
      const [activado, setActivado] = useState(false);
      const [pulsado, setPulsado] = useState(false);
      const [menuNav, setMenuNav] = useState('navList');
+     const [colorNav, setColorNav] = useState('transparent');
 
      const mostrarMenu = () => {
           setActivado(!activado);
           setPulsado(!pulsado);
           if (activado == false) {
                setMenuNav('navList visible');
+               setColorNav('navBarBlanca');
           }
           else {
                setMenuNav('navList');
+               setColorNav('transparent');
           }
      }
 
@@ -27,7 +30,7 @@ function NavBar(props) {
      return (
           <>
                <header>
-                    <nav className={`navBar ${props.transparente}`}>
+                    <nav className={`navBar ${colorNav}`}>
                          <div className="navBrand">
                               <a href="#"><img src={NavBarIconDark} alt="NavBarIcon"></img> </a>
                          </div>

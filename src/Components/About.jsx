@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { CardComponent } from './CardAbout';
 
 function About() {
 
@@ -12,25 +13,23 @@ function About() {
 
      return (
           <section id="about">
-               <div className="contenedorInfoAbout flex" data-aos="fade-right">
-                    <div className="presentacion flex column">
+               <div className="contenedorInfoAbout flex">
+                    <div className="presentacion flex column" data-aos="fade-right">
                          <h1 className="text-5xl font-bold text-[#303030]">Sobre mi</h1>
 
                          <p className="font-semibold text-[#303030]">
-                              ¡Hola a todos 👋! Bienvenidos a mi portfolio. Soy profesor de música, compositor , productor y arreglista.
+                              ¡Hola a todos! 👋 Bienvenidos a mi portfolio. Soy profesor de música, compositor, productor y arreglista.
                          </p>
                          <p className="font-semibold text-[#303030]">
                               Tengo 28 años y estoy estudiando la licenciatura en Música en la UNA (Universida Nacional de las Artes).
-                              Tengo experiencia dando clases a pequeños y grandes
-                              grupos de alumnos. Se enseñar con diferentes métodos
+                              Tengo experiencia dando clases a <span className='enfasis'>pequeños y grandes
+                                   grupos de alumnos.</span> Se enseñar con diferentes métodos
                               y siempre priorizo el aprendizaje y la comodidad de mis
                               estudiantes.
                          </p>
                     </div>
 
-                    <div className="contenedorImagen flex column">
-
-                    </div>
+                    <CardComponent/>
                </div>
           </section>
      );

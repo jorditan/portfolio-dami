@@ -23,7 +23,7 @@
 
 html::-webkit-scrollbar {
   width: 5px;
-  background-color: #303030;
+  background-color: var(--color-secundario);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -65,11 +65,27 @@ i {
 }
 
 .navBarNegra {
-  background-color: #303030;
+  background-color: var(--color-secundario);
 }
 
 .navBarBlanca {
-  background-color: #fafafa;
+  background-color: var(--color-primario);
+}
+
+:root {
+  --color-primario: #fafafa;
+  --color-secundario: #303030;
+  --enfasis: #1d1d1d;
+  --sombra: 0px 7px 15px rgba(0, 0, 0, 0.10),
+       0px 28px 28px rgba(0, 0, 0, 0.09),
+       0px 62px 37px rgba(0, 0, 0, 0.05),
+       0px 110px 44px rgba(0, 0, 0, 0.01),
+       0px 173px 48px rgba(0, 0, 0, 0.00);
+}
+
+.enfasis {
+  color: var(--enfasis);
+  font-weight: bolder;
 }
 
 .sombra {
@@ -93,7 +109,6 @@ header {
   display: flex;
   height: inherit;
   padding: 0.6em;
-  background-color: transparent;
 }
 .navBar .menuHamburguesa {
   display: none;
@@ -116,7 +131,7 @@ header {
   align-items: center;
 }
 .navBar .navList .navItem {
-  color: #303030;
+  color: var(--color-secundario);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,12 +139,12 @@ header {
 .navBar .navList .navItem .navLink {
   cursor: pointer;
   margin: 0 6px 0 10px;
-  color: #303030;
+  color: var(--color-secundario);
   font-size: 16px;
   transition: 0.5s all ease-in-out;
 }
 .navBar .navList .navItem .iconNav {
-  color: #303030;
+  color: var(--color-secundario);
   font-size: 16px;
   transition: 0.4s all ease-in-out;
 }
@@ -145,7 +160,7 @@ header {
   flex-direction: column;
   top: 90%;
   position: absolute;
-  background-color: #303030;
+  background-color: var(--color-secundario);
   z-index: 1000;
   border-radius: 3px;
   width: 10em;
@@ -159,7 +174,7 @@ header {
   display: block;
   cursor: pointer;
   padding-left: 10px;
-  color: #fafafa;
+  color: var(--color-primario);
   font-size: 15px;
   transition: 0.3s all ease-in-out;
 }
@@ -187,21 +202,21 @@ header {
     width: 40px;
     transition: all 300ms;
     height: 4px;
-    background-color: #303030;
+    background-color: var(--color-secundario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa .linea2 {
     transition: all 300ms;
     width: 30px;
     height: 4px;
-    background-color: #303030;
+    background-color: var(--color-secundario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa .linea3 {
     transition: all 300ms;
     width: 20px;
     height: 4px;
-    background-color: #303030;
+    background-color: var(--color-secundario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa.pulsado {
@@ -221,11 +236,13 @@ header {
   }
   .navBar .navBrand {
     width: 100%;
+    height: 60%;
+    padding-left: 1em;
   }
   .navBar .navList {
     display: none;
     transition: 0.4s ease-out;
-    background-color: #303030;
+    background-color: var(--color-secundario);
     width: 100%;
     height: 100vh;
     justify-content: space-evenly;
@@ -234,7 +251,7 @@ header {
     flex-direction: column;
     top: 100%;
     right: 0;
-    color: #fafafa;
+    color: var(--color-primario);
     font-size: 1.5em;
   }
   .navBar .navList.invisible {
@@ -248,10 +265,10 @@ header {
     display: flex;
   }
   .navBar .navList .navItem {
-    color: #fafafa;
+    color: var(--color-primario);
   }
   .navBar .navList .navItem .navLink {
-    color: #fafafa;
+    color: var(--color-primario);
   }
   .navBar .navList .dropDownMenu {
     width: 100%;
@@ -260,32 +277,29 @@ header {
   .navBar .navList .dropDownMenu .dropDown {
     top: 80%;
     left: 22%;
-    background-color: #fafafa;
+    background-color: var(--color-primario);
     width: 60%;
     height: auto;
     margin: 1em 0 1em 0;
   }
   .navBar .navList .dropDownMenu .dropDown li .navLink {
-    color: #303030;
+    color: var(--color-secundario);
     font-size: 22px;
   }
 }
 @media screen and (max-width: 583px) {
-  .navBrand {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  header {
+    position: absolute;
   }
-  .navBrand img {
-    height: 80%;
-    width: 100%;
+  #inicio {
+    height: 90vh;
   }
 }
 /*----------------------------- SECCION INICIO ----------------------*/
 #inicio {
   min-height: 50vh;
   flex-shrink: 0;
-  background-image: linear-gradient(to right bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+  background-image: linear-gradient(to right bottom, var(--color-primario), #d7d7d7, #b5b5b5, #949494, #747474);
 }
 #inicio .contenedorAlert {
   position: absolute;
@@ -332,7 +346,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #303030;
+  background-color: var(--color-secundario);
   height: 250px;
   border-radius: 30px;
   width: 30%;
@@ -360,7 +374,7 @@ header {
 }
 .contenedorReproductor .botones .icon {
   font-size: 30px;
-  color: #303030;
+  color: var(--color-secundario);
   transition: 0.5s all ease-out;
 }
 .contenedorReproductor .botones .icon:hover {
@@ -429,7 +443,7 @@ header {
 .contenedorInfo .info {
   height: 3em;
   width: 55%;
-  background-color: #303030;
+  background-color: var(--color-secundario);
   border-radius: 10px;
   align-items: center;
   justify-content: space-evenly;
@@ -437,7 +451,7 @@ header {
 }
 .contenedorInfo .info .botonInfo {
   display: none;
-  color: #fafafa;
+  color: var(--color-primario);
 }
 .contenedorInfo .info .redesList, .contenedorInfo .info .switchs, .contenedorInfo .info .contenedorModal {
   gap: 20px;
@@ -446,7 +460,7 @@ header {
 }
 .contenedorInfo .info .redesList .redesItem .redesIcon {
   font-size: 25px;
-  color: #fafafa;
+  color: var(--color-primario);
   transition: 0.4s ease-out;
 }
 .contenedorInfo .info .redesList .redesItem .redesIcon:hover {
@@ -481,7 +495,7 @@ header {
 #about {
   min-height: 100vh;
   padding: 2em 4em 0 4em;
-  background-image: linear-gradient(to left bottom, #747474, #949494, #b5b5b5, #d7d7d7, #fafafa);
+  background-image: linear-gradient(to left bottom, #747474, #949494, #b5b5b5, #d7d7d7, var(--color-primario));
 }
 #about .contenedorInfoAbout {
   height: 30em;
@@ -495,8 +509,10 @@ header {
 #about .contenedorInfoAbout .presentacion h1 {
   padding-bottom: 0.5em;
 }
-#about .contenedorInfoAbout .contenedorImagen {
+#about .contenedorInfoAbout .contenedorCard {
   width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 858px) {

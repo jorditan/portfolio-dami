@@ -14,7 +14,7 @@ function Alerta({ display }) {
                          <Alert.Body>
                               <Alert.Title className="text-white">¡Realizado!</Alert.Title>
                               <Alert.Description className="text-gray-400">
-                                   URl de la web copiado al portapapeles
+                                   URL de la web copiado al portapapeles
                               </Alert.Description>
                          </Alert.Body>
                     </Alert.Container>
