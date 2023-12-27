@@ -17,7 +17,7 @@ function About() {
           <section id="about">
                <div className="contenedorInfoAbout flex">
                     <div className="presentacion flex column" data-aos="fade-right">
-                         <h1 className="text-5xl font-bold text-[#303030]">Sobre mi</h1>
+                         <h2 className="text-6xl font-bold text-[#303030]">Sobre mi</h2>
 
                          <p className="font-semibold text-[#303030]">
                               ¡Hola a todos! 👋 Bienvenidos a mi portfolio. Soy profesor de música, compositor, productor y arreglista.
@@ -34,7 +34,7 @@ function About() {
                     <CardComponent/>
                </div>
 
-               <CardInicio data-aos="fade-up"/>
+               <CardInicio />
           </section>
      );
 }

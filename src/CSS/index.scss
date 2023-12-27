@@ -64,25 +64,56 @@ i {
 
 .transparent {
      background-color: transparent;
+     transition: .4s all ease-out;
 }
 
 .navBarNegra {
      background-color: var(--color-secundario);
+     transition: .4s all ease-out;
+
+     .navList {
+          .navItem {
+               color: var(--color-primario);
+
+               .navLink {
+                    color: var(--color-primario);
+               }
+
+               .navIcon {
+                    color: var(--color-primario);
+               }
+          }
+     }
+
+     opacity: .8;
 }
 
 .navBarBlanca {
      background-color: var(--color-primario);
+     transition: .4s all ease-out;
+
+     .navList {
+          .navItem {
+               color: var(--color-secundario);
+
+               .navLink {
+                    color: var(--color-secundario);
+               }
+
+               .navIcon {
+                    color: var(--color-secundario);
+               }
+          }
+     }
+
+     opacity: .8;
 }
 
 :root {
      --color-primario: #fafafa;
      --color-secundario: #303030;
      --enfasis: #1d1d1d;
-     --sombra: 0px 7px 15px rgba(0, 0, 0, 0.10),
-          0px 28px 28px rgba(0, 0, 0, 0.09),
-          0px 62px 37px rgba(0, 0, 0, 0.05),
-          0px 110px 44px rgba(0, 0, 0, 0.01),
-          0px 173px 48px rgba(0, 0, 0, 0.00);
+     --sombra: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
 }
 
 .enfasis {
@@ -101,7 +132,7 @@ section {
 /*-------------------- ESTILOS NAVBAR ------------------------------*/
 
 header {
-     height: 9vh;
+     height: 48px;
      position: fixed;
      z-index: 1000;
 }
@@ -111,11 +142,11 @@ header {
      width: 100%;
      display: flex;
      height: inherit;
-     padding: .6em;
 
      .menuHamburguesa {
           display: none;
      }
+
      .navList {
           width: 100%;
           height: 100%;
@@ -124,7 +155,6 @@ header {
           align-items: center;
 
           .navItem {
-               color: var(--color-secundario);
                display: flex;
                justify-content: center;
                align-items: center;
@@ -132,13 +162,11 @@ header {
                .navLink {
                     cursor: pointer;
                     margin: 0 6px 0 10px;
-                    color: var(--color-secundario);
                     font-size: 16px;
                     transition: .5s all ease-in-out;
                }
 
                .iconNav {
-                    color: var(--color-secundario);
                     font-size: 16px;
                     transition: .4s all ease-in-out;
                }
@@ -440,7 +468,7 @@ header {
 
           #titulo {
                width: 100%;
-               font-size: 1.7rem;
+               font-size: 2rem;
                text-align: left;
           }
 
@@ -481,6 +509,12 @@ header {
                right: 5%;
                top: 85%;
                left: 5%;
+               padding-bottom: 2em;
+               position: fixed;
+          }
+
+          #titulo {
+               font-size: 1.5rem;
           }
      }
 }
@@ -489,6 +523,7 @@ header {
      #inicio {
           .contenedorTitulo {
                padding-left: 1em;
+
           }
 
           .contenedorReproductor {
@@ -606,23 +641,24 @@ header {
                justify-content: center;
                gap: 20px;
 
-               h1 {
+               h2 {
                     padding-bottom: .5em;
                }
           }
 
           .contenedorCard {
                width: 50%;
-               justify-content: center;
+               justify-content: flex-end;
                align-items: center;
           }
      }
 
      #cardAbout {
           padding-top: 4em;
+
           .contenedorCard {
                width: 100%;
-               justify-content: space-evenly;
+               justify-content: flex-start;
                gap: 50px;
 
                .proyectosPersonales,
@@ -632,13 +668,11 @@ header {
                     background-color: #fafafa;
                     border-radius: 3px;
                     transition: .5s all ease-out;
+                    border-radius: inherit;
 
                     &:hover {
                          transform: translateY(-10px);
-                         box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
-                         -webkit-box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
-                         -moz-box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
-                         ;
+                         box-shadow: var(--sombra);
                     }
 
                     .contenedorLink {
@@ -647,6 +681,11 @@ header {
                          background-color: #302f2f9c;
                          align-items: center;
                          justify-content: center;
+                         transition: .3s all ease-in;
+
+                         &:hover {
+                              background-color: #302f2fd7;
+                         }
 
                          a {
                               transition: .5s all ease-out;
@@ -656,14 +695,6 @@ header {
                               &:hover {
                                    transform: translateY(-10px);
                               }
-                         }
-
-                         &:hover {
-                              .contenedorLink {
-                                   transform: translateY(-10px);
-                                   background-color: #302f2fe1;
-                              }
-
                          }
                     }
                }

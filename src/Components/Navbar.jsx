@@ -1,7 +1,6 @@
 import { LuListMusic } from "react-icons/lu";
-import NavBarIconDark from '../assets/img/NavBarIconDark.png';
 import { GoInfo } from "react-icons/go";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 import DropDown from '../Components/DropDown';
@@ -25,6 +24,16 @@ function NavBar() {
                setColorNav('transparent');
           }
      }
+
+     useEffect(() => {
+          document.addEventListener('scroll',() => {
+               if (window.scrollY > 0) {
+                    setColorNav('navBarNegra');
+               } else {
+                    setColorNav('transparent')
+               }
+          })
+     },[])
 
 
      return (
