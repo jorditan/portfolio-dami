@@ -14,7 +14,7 @@ export const CardComponent = () => {
      })
 
      return (
-          <div className="contenedorCard flex" data-aos="fade-up">
+          <div className="contenedorCard flex w-full" data-aos="fade-up">
                <Card className="max-w-xs p-6 md:max-w-lg">
                     <Card.Description>
                          Clases de música 100% personalizadas para todos mis alumnos. No se requiere experiencia previa. ¿Querés conocer más sobre mi carrera? Hace click <a href="#" className="navLink font-bold text-[#303030] hover:text-[#1d1d1d]">acá.</a>

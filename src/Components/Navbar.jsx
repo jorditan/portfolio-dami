@@ -30,11 +30,7 @@ function NavBar() {
      return (
           <>
                <header>
-                    <nav className={`navBar ${colorNav}`}>
-                         <div className="navBrand">
-                              <a href="#"><img src={NavBarIconDark} alt="NavBarIcon"></img> </a>
-                         </div>
-                         
+                    <nav className={`navBar ${colorNav}`}>                         
                          <ul className={menuNav}>
                               <li className="navItem"><LuListMusic className="iconNav"/>
                                    <a href="#" className="navLink">Composiciones</a>

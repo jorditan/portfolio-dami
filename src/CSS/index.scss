@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -117,20 +116,6 @@ header {
      .menuHamburguesa {
           display: none;
      }
-
-
-     .navBrand {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: flex-start;
-          padding-left: 2em;
-
-          img {
-               height: 100%;
-          }
-     }
-
      .navList {
           width: 100%;
           height: 100%;
@@ -212,7 +197,7 @@ header {
           .menuHamburguesa {
                display: flex;
                flex-direction: column;
-               width: 70%;
+               width: 100%;
                height: 100%;
                justify-content: center;
                align-items: flex-end;
@@ -264,13 +249,6 @@ header {
                }
           }
 
-
-          .navBrand {
-               width: 100%;
-               height: 60%;
-               padding-left: 1em;
-          }
-
           .navList {
                display: none;
                transition: .4s ease-out;
@@ -309,6 +287,7 @@ header {
                .dropDownMenu {
                     width: 100%;
                     justify-content: center;
+
                     .dropDown {
                          top: 80%;
                          left: 22%;
@@ -333,6 +312,7 @@ header {
      header {
           position: absolute;
      }
+
      #inicio {
           height: 90vh;
      }
@@ -343,9 +323,10 @@ header {
 /*----------------------------- SECCION INICIO ----------------------*/
 
 #inicio {
-     min-height: 50vh;
+     height: auto;
      flex-shrink: 0;
      background-image: linear-gradient(to right bottom, var(--color-primario), #d7d7d7, #b5b5b5, #949494, #747474);
+
      .contenedorAlert {
           position: absolute;
           display: flex;
@@ -353,6 +334,7 @@ header {
           right: 2%;
           top: 40%;
           transition: .5s all ease-in;
+          z-index: 1000;
      }
 }
 
@@ -366,20 +348,26 @@ header {
           display: block;
           white-space: nowrap;
           border-right: 4px;
-          width: 20ch;
+          width: 22ch;
           animation: escribiendo 2s steps(20),
-          puntero .5s infinite step-end alternate;
+               puntero .5s infinite step-end alternate;
 
           overflow: hidden;
      }
 }
 
 @keyframes escribiendo {
-     from {width: 0};
+     from {
+          width: 0
+     }
+
+     ;
 }
 
 @keyframes puntero {
-     0% {border: transparent;}
+     0% {
+          border: transparent;
+     }
 }
 
 .contenedorReproductor {
@@ -440,7 +428,7 @@ header {
 @media screen and (max-width: 880px) {
      #titulo {
           font-size: 3rem;
-          width:auto;
+          width: auto;
      }
 }
 
@@ -487,13 +475,26 @@ header {
      }
 }
 
-@media screen and (max-width: 370px) {
-     .contenedorTitulo {
-          padding-left: 1em;
+@media screen and (max-width: 440px) {
+     #inicio {
+          .contenedorAlert {
+               right: 5%;
+               top: 85%;
+               left: 5%;
+          }
      }
-     .contenedorReproductor {
-          .contenedorTextoRep {
+}
+
+@media screen and (max-width: 370px) {
+     #inicio {
+          .contenedorTitulo {
                padding-left: 1em;
+          }
+
+          .contenedorReproductor {
+               .contenedorTextoRep {
+                    padding-left: 1em;
+               }
           }
      }
 }
@@ -523,7 +524,9 @@ header {
                color: var(--color-primario);
           }
 
-          .redesList, .switchs, .contenedorModal {
+          .redesList,
+          .switchs,
+          .contenedorModal {
                gap: 20px;
                width: 33%;
                justify-content: center;
@@ -555,7 +558,7 @@ header {
 
 @media screen and (max-width: 646px) {
      .contenedorInfo {
-          .info   {
+          .info {
                .redesList {
                     .redesItem {
                          .redesIcon {
@@ -563,18 +566,19 @@ header {
                          }
                     }
                }
+
                .contenedorModal {
                     height: 100%;
 
-                         button {
-                              height: 100%;
-                              margin: 0;
-                              
-                              span {
-                                   font-size: 12px;
-                                   padding: 0;
-                              }
+                    button {
+                         height: 100%;
+                         margin: 0;
+
+                         span {
+                              font-size: 12px;
+                              padding: 0;
                          }
+                    }
                }
 
                .switchs {
@@ -588,12 +592,13 @@ header {
 /*------------------------- SECCION ABOUT ----------------*/
 
 #about {
-     min-height: 100vh;
-     padding: 2em 4em 0 4em;
+     height: auto;
+     padding: 6em 4em 2em 6em;
      background-image: linear-gradient(to left bottom, #747474, #949494, #b5b5b5, #d7d7d7, var(--color-primario));
 
      .contenedorInfoAbout {
-          height: 30em;
+          height: auto;
+          gap: 50px;
 
           .presentacion {
                width: 50%;
@@ -611,19 +616,101 @@ header {
                justify-content: center;
                align-items: center;
           }
+     }
 
+     #cardAbout {
+          padding-top: 4em;
+          .contenedorCard {
+               width: 100%;
+               justify-content: space-evenly;
+               gap: 50px;
 
+               .proyectosPersonales,
+               .clases {
+                    width: 30%;
+                    height: 20em;
+                    background-color: #fafafa;
+                    border-radius: 3px;
+                    transition: .5s all ease-out;
+
+                    &:hover {
+                         transform: translateY(-10px);
+                         box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
+                         -webkit-box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
+                         -moz-box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
+                         ;
+                    }
+
+                    .contenedorLink {
+                         width: 100%;
+                         height: 100%;
+                         background-color: #302f2f9c;
+                         align-items: center;
+                         justify-content: center;
+
+                         a {
+                              transition: .5s all ease-out;
+                              padding: 10px;
+                              text-align: center;
+
+                              &:hover {
+                                   transform: translateY(-10px);
+                              }
+                         }
+
+                         &:hover {
+                              .contenedorLink {
+                                   transform: translateY(-10px);
+                                   background-color: #302f2fe1;
+                              }
+
+                         }
+                    }
+               }
+
+               .proyectosPersonales {
+                    background-image: url('../assets/img/Saturnalia.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+               }
+
+               .clases {
+                    background-image: url('../assets/img/FotoDamiPortfolio.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+               }
+          }
      }
 }
 
 @media screen and (max-width: 858px) {
      #about {
           padding: 2em 2em 0 2em;
+
           .contenedorInfoAbout {
                flex-direction: column;
 
                .presentacion {
                     width: 100%;
+               }
+
+               .contenedorCard {
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin: 2em 0 2em 0;
+               }
+          }
+
+          #cardAbout {
+               .contenedorCard {
+                    padding-top: 2em;
+                    flex-direction: column;
+
+                    .card {
+                         width: 100%;
+                    }
                }
           }
      }
@@ -632,7 +719,7 @@ header {
 @media screen and (max-width: 370px) {
      #about {
           padding: 2em 2em 0 1em;
-          
+
           .contenedorInfoAbout {
                .presentacion {
                     padding-left: 0;

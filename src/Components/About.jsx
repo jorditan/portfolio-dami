@@ -2,6 +2,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { CardComponent } from './CardAbout';
+import CardInicio from './CardInicio';
+
 
 function About() {
 
@@ -31,6 +33,8 @@ function About() {
 
                     <CardComponent/>
                </div>
+
+               <CardInicio data-aos="fade-up"/>
           </section>
      );
 }

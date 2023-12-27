@@ -113,16 +113,6 @@ header {
 .navBar .menuHamburguesa {
   display: none;
 }
-.navBar .navBrand {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 2em;
-}
-.navBar .navBrand img {
-  height: 100%;
-}
 .navBar .navList {
   width: 100%;
   height: 100%;
@@ -190,7 +180,7 @@ header {
   .navBar .menuHamburguesa {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: flex-end;
@@ -233,11 +223,6 @@ header {
   .navBar .menuHamburguesa.pulsado .linea3 {
     width: 40px;
     transform: rotate(-45deg) translate(18px, -2px);
-  }
-  .navBar .navBrand {
-    width: 100%;
-    height: 60%;
-    padding-left: 1em;
   }
   .navBar .navList {
     display: none;
@@ -297,7 +282,7 @@ header {
 }
 /*----------------------------- SECCION INICIO ----------------------*/
 #inicio {
-  min-height: 50vh;
+  height: auto;
   flex-shrink: 0;
   background-image: linear-gradient(to right bottom, var(--color-primario), #d7d7d7, #b5b5b5, #949494, #747474);
 }
@@ -308,6 +293,7 @@ header {
   right: 2%;
   top: 40%;
   transition: 0.5s all ease-in;
+  z-index: 1000;
 }
 
 .contenedorTitulo {
@@ -320,7 +306,7 @@ header {
   display: block;
   white-space: nowrap;
   border-right: 4px;
-  width: 20ch;
+  width: 22ch;
   animation: escribiendo 2s steps(20), puntero 0.5s infinite step-end alternate;
   overflow: hidden;
 }
@@ -422,11 +408,18 @@ header {
     padding: 1em 0 0 2em;
   }
 }
+@media screen and (max-width: 440px) {
+  #inicio .contenedorAlert {
+    right: 5%;
+    top: 85%;
+    left: 5%;
+  }
+}
 @media screen and (max-width: 370px) {
-  .contenedorTitulo {
+  #inicio .contenedorTitulo {
     padding-left: 1em;
   }
-  .contenedorReproductor .contenedorTextoRep {
+  #inicio .contenedorReproductor .contenedorTextoRep {
     padding-left: 1em;
   }
 }
@@ -453,7 +446,9 @@ header {
   display: none;
   color: var(--color-primario);
 }
-.contenedorInfo .info .redesList, .contenedorInfo .info .switchs, .contenedorInfo .info .contenedorModal {
+.contenedorInfo .info .redesList,
+.contenedorInfo .info .switchs,
+.contenedorInfo .info .contenedorModal {
   gap: 20px;
   width: 33%;
   justify-content: center;
@@ -493,12 +488,13 @@ header {
 }
 /*------------------------- SECCION ABOUT ----------------*/
 #about {
-  min-height: 100vh;
-  padding: 2em 4em 0 4em;
+  height: auto;
+  padding: 6em 4em 2em 6em;
   background-image: linear-gradient(to left bottom, #747474, #949494, #b5b5b5, #d7d7d7, var(--color-primario));
 }
 #about .contenedorInfoAbout {
-  height: 30em;
+  height: auto;
+  gap: 50px;
 }
 #about .contenedorInfoAbout .presentacion {
   width: 50%;
@@ -514,6 +510,64 @@ header {
   justify-content: center;
   align-items: center;
 }
+#about #cardAbout {
+  padding-top: 4em;
+}
+#about #cardAbout .contenedorCard {
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+#about #cardAbout .contenedorCard .proyectosPersonales,
+#about #cardAbout .contenedorCard .clases {
+  width: 30%;
+  height: 20em;
+  background-color: #fafafa;
+  border-radius: 3px;
+  transition: 0.5s all ease-out;
+}
+#about #cardAbout .contenedorCard .proyectosPersonales:hover,
+#about #cardAbout .contenedorCard .clases:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
+}
+#about #cardAbout .contenedorCard .proyectosPersonales .contenedorLink,
+#about #cardAbout .contenedorCard .clases .contenedorLink {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 47, 47, 0.6117647059);
+  align-items: center;
+  justify-content: center;
+}
+#about #cardAbout .contenedorCard .proyectosPersonales .contenedorLink a,
+#about #cardAbout .contenedorCard .clases .contenedorLink a {
+  transition: 0.5s all ease-out;
+  padding: 10px;
+  text-align: center;
+}
+#about #cardAbout .contenedorCard .proyectosPersonales .contenedorLink a:hover,
+#about #cardAbout .contenedorCard .clases .contenedorLink a:hover {
+  transform: translateY(-10px);
+}
+#about #cardAbout .contenedorCard .proyectosPersonales .contenedorLink:hover .contenedorLink,
+#about #cardAbout .contenedorCard .clases .contenedorLink:hover .contenedorLink {
+  transform: translateY(-10px);
+  background-color: rgba(48, 47, 47, 0.8823529412);
+}
+#about #cardAbout .contenedorCard .proyectosPersonales {
+  background-image: url("../assets/img/Saturnalia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#about #cardAbout .contenedorCard .clases {
+  background-image: url("../assets/img/FotoDamiPortfolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @media screen and (max-width: 858px) {
   #about {
@@ -523,6 +577,18 @@ header {
     flex-direction: column;
   }
   #about .contenedorInfoAbout .presentacion {
+    width: 100%;
+  }
+  #about .contenedorInfoAbout .contenedorCard {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 2em 0 2em 0;
+  }
+  #about #cardAbout .contenedorCard {
+    padding-top: 2em;
+    flex-direction: column;
+  }
+  #about #cardAbout .contenedorCard .card {
     width: 100%;
   }
 }
