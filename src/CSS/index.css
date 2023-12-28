@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -114,10 +115,6 @@ i {
 
 .sombra {
   box-shadow: var(--sombra);
-}
-
-section {
-  padding-top: 3em;
 }
 
 /*-------------------- ESTILOS NAVBAR ------------------------------*/
@@ -515,7 +512,7 @@ header {
 /*------------------------- SECCION ABOUT ----------------*/
 #about {
   height: auto;
-  padding: 6em 4em 2em 6em;
+  padding: 6em 4em 8em 6em;
   background-image: linear-gradient(to left bottom, #747474, #949494, #b5b5b5, #d7d7d7, var(--color-primario));
 }
 #about .contenedorInfoAbout {
@@ -582,13 +579,13 @@ header {
   transform: translateY(-10px);
 }
 #about #cardAbout .contenedorCard .proyectosPersonales {
-  background-image: url("../assets/img/Saturnalia.jpg");
+  background-image: url("../assets/img/Saturnalia.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #about #cardAbout .contenedorCard .clases {
-  background-image: url("../assets/img/FotoDamiPortfolio.jpg");
+  background-image: url("../assets/img/FotoDamiPortfolio.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -596,7 +593,7 @@ header {
 
 @media screen and (max-width: 858px) {
   #about {
-    padding: 2em 2em 0 2em;
+    padding: 2em 2em 4em 2em;
   }
   #about .contenedorInfoAbout {
     flex-direction: column;
@@ -623,5 +620,119 @@ header {
   }
   #about .contenedorInfoAbout .presentacion {
     padding-left: 0;
+  }
+}
+/*------------------------ SECCIÓN FOOTER -------------------*/
+#footer {
+  background-color: #474453;
+  height: 30vh;
+}
+#footer .contenedorInfoFooter {
+  width: 33%;
+  height: 100%;
+}
+#footer .filaSuperior {
+  width: 100%;
+  height: 70%;
+}
+#footer .filaSuperior .logo .contenedorImg {
+  width: 100%;
+  height: 50%;
+}
+#footer .filaSuperior .logo .contenedorImg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#footer .filaInferior {
+  height: 30%;
+  width: 100%;
+  background-color: #302E3B;
+}
+#footer .filaInferior #iconMail {
+  color: #afaeb4;
+}
+
+@media screen and (max-width: 896px) {
+  #footer .filaSuperior {
+    padding-left: 2em;
+  }
+  #footer .filaSuperior .logo p {
+    font-size: 0.8em;
+    width: 80%;
+  }
+  #footer .filaSuperior .logo .contenedorImg {
+    width: 100%;
+    height: 30%;
+  }
+  #footer .filaSuperior .logo .contenedorImg img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #footer .filaSuperior .contenedor {
+    padding-left: 2em;
+  }
+  #footer .filaInferior .contenedorAuditoria, #footer .filaInferior .contenedorMail {
+    padding-left: 2em;
+    width: 50%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 660px) {
+  #footer .filaInferior {
+    padding-top: 2em;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #footer .filaInferior .contenedorAuditoria {
+    width: 100%;
+  }
+  #footer .filaInferior .contenedorAuditoria p {
+    text-align: center;
+  }
+  #footer .filaInferior .contenedorMail {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 610px) {
+  #footer {
+    height: auto;
+  }
+  #footer .filaSuperior {
+    padding: 4em 0 4em 0;
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #footer .filaSuperior .contenedorInfoFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .filaSuperior .logo .contenedorImg {
+    width: 20%;
+  }
+  #footer .filaSuperior .logo p {
+    text-align: center;
+  }
+  #footer .filaSuperior .contenedorRedesList {
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #footer .filaSuperior .contenedor {
+    gap: 20px;
+    padding: 0;
+  }
+  #footer .filaSuperior .contenedor .dudasList {
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .filaInferior {
+    height: auto;
   }
 }/*# sourceMappingURL=index.css.map */
