@@ -1,17 +1,17 @@
 import Navbar from './Components/Navbar'
-import Main from './Components/Main'
-import About from './Components/About'
-import Footer from './Components/Footer'
-
+import { Routes, Route} from 'react-router-dom'
+import Home from './Screens/Home'
+import Clases from './Screens/Clases'
 
 function App() {
 
   return (
     <>
       <Navbar/>
-      <Main/>
-      <About/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/composiciones' element={<Clases/>}/>
+      </Routes>
     </>
   )
 }

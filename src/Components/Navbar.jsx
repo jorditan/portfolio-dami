@@ -1,7 +1,8 @@
 import { LuListMusic } from "react-icons/lu";
 import { GoInfo } from "react-icons/go";
 import { useEffect, useState } from "react";
-
+import { Link, Outlet } from "react-router-dom";
+import { IoHome } from "react-icons/io5";
 
 import DropDown from '../Components/DropDown';
 
@@ -40,14 +41,18 @@ function NavBar() {
      return (
           <>
                <header>
-                    <nav className={`navBar ${colorNav}`}>                         
+                    <nav className={`navBar ${colorNav}`}>                    
                          <ul className={menuNav}>
+                              <li className="navItem"><IoHome className="iconNav"/>
+                                   <Link to="/" className="navLink">Inicio</Link>
+                              </li>
+
                               <li className="navItem"><LuListMusic className="iconNav"/>
-                                   <a href="#" className="navLink">Composiciones</a>
+                                   <Link to="/composiciones" className="navLink">Composiciones</Link>
                               </li>
 
                               <li className="navItem"><GoInfo className="iconNav"/>
-                                   <a href="#" className="navLink">Mi carrera</a>
+                                   <Link to="/micarrera" className="navLink">Mi carrera</Link>
                               </li>
 
                               <DropDown/>
@@ -60,6 +65,7 @@ function NavBar() {
                          </div>
                     </nav>
                </header>
+               <Outlet/>
           </>
      );
 }

@@ -1,5 +1,6 @@
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { useEffect, useState, useRef } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 
 function DropDown() {
@@ -42,14 +43,15 @@ function DropDown() {
 
                     <ul className={dropDown} ref={menuRef}>
                          <li>
-                              <a href="#" className="navLink">Info</a>
+                              <Link to="/InfoClases" className="navLink">Info</Link>
                          </li>
 
                          <li>
-                              <a href="#" className="navLink">Presupuesto</a>
+                              <Link to="/PresupuestoClases" className="navLink">Presupuesto</Link>
                          </li>
                     </ul>
                </div>
+               <Outlet/>
           </>
      );
 }
