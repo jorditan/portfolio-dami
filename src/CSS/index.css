@@ -65,6 +65,11 @@ i {
   transition: 0.4s all ease-out;
 }
 
+.navBarResponsive {
+  background-color: #fafafa;
+  transition: 0.4s all ease-out;
+}
+
 .navBarNegra {
   background-color: var(--color-secundario);
   transition: 0.4s all ease-out;
@@ -130,6 +135,7 @@ header {
 }
 .navBar .menuHamburguesa {
   display: none;
+  padding-right: 0.5em;
 }
 .navBar .navList {
   width: 100%;
@@ -207,21 +213,21 @@ header {
     width: 40px;
     transition: all 300ms;
     height: 4px;
-    background-color: var(--color-secundario);
+    background-color: var(--color-primario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa .linea2 {
     transition: all 300ms;
     width: 30px;
     height: 4px;
-    background-color: var(--color-secundario);
+    background-color: var(--color-primario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa .linea3 {
     transition: all 300ms;
     width: 20px;
     height: 4px;
-    background-color: var(--color-secundario);
+    background-color: var(--color-primario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa.pulsado {

@@ -17,23 +17,24 @@ function NavBar() {
           setPulsado(!pulsado);
           if (activado == false) {
                setMenuNav('navList visible');
-               setColorNav('navBarBlanca');
+               setColorNav('navBarNegra');
+               setActivado(true);
           }
           else {
                setMenuNav('navList');
-               setColorNav('transparent');
+               setActivado(false);
           }
      }
 
      useEffect(() => {
           document.addEventListener('scroll',() => {
-               if (window.scrollY > 0) {
+               if (window.scrollY > 0 || activado != false) {
                     setColorNav('navBarNegra');
                } else {
                     setColorNav('transparent')
                }
           })
-     },[])
+     },[activado])
 
 
      return (
