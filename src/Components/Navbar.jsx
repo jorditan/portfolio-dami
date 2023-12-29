@@ -22,9 +22,15 @@ function NavBar() {
                setActivado(true);
           }
           else {
-               setMenuNav('navList');
-               setActivado(false);
+               cerrarMenu()
           }
+     }
+
+     const cerrarMenu = () => {
+          setMenuNav('navList');
+          setColorNav('transparent')
+          setActivado(false);
+          setPulsado(false);
      }
 
      useEffect(() => {
@@ -44,18 +50,18 @@ function NavBar() {
                     <nav className={`navBar ${colorNav}`}>                    
                          <ul className={menuNav}>
                               <li className="navItem"><IoHome className="iconNav"/>
-                                   <Link to="/" className="navLink">Inicio</Link>
+                                   <Link onClick={cerrarMenu}  to="/" className="navLink">Inicio</Link>
                               </li>
 
                               <li className="navItem"><LuListMusic className="iconNav"/>
-                                   <Link to="/composiciones" className="navLink">Composiciones</Link>
+                                   <Link onClick={cerrarMenu}  to="/composiciones" className="navLink" >Composiciones</Link>
                               </li>
 
                               <li className="navItem"><GoInfo className="iconNav"/>
-                                   <Link to="/micarrera" className="navLink">Mi carrera</Link>
+                                   <Link onClick={cerrarMenu} to="/micarrera" className="navLink">Mi carrera</Link>
                               </li>
 
-                              <DropDown/>
+                              <DropDown />
                          </ul>
 
                          <div className={`menuHamburguesa flex column ${!pulsado ? '' : 'pulsado'}`} onClick={mostrarMenu}>

@@ -4,8 +4,10 @@ import About from '../Components/About'
 function Home() {
      return (
           <>
-               <Main />
-               <About />
+               <main>
+                    <Main />
+                    <About />
+               </main>
           </>
      );
 }

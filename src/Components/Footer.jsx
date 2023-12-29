@@ -55,7 +55,7 @@ function Footer() {
 
                <div className="filaInferior flex justify-center items-center">
                     <div className="contenedorAuditoria w-3/4 pl-24">
-                         <p className="text-[#afaeb4] text-xs">Todos las composiciones y proyectos personales son parte de <span className="font-bold text-[#c7c7c7]">mi auditoría.</span> En caso de querer más información contactarse conmigo</p>
+                         <p className="text-[#afaeb4] text-xs">Todos las composiciones y proyectos personales son parte de <span className="font-bold text-[#c7c7c7]">mi autoría.</span> En caso de querer más información contactarse conmigo</p>
                     </div>
 
                     <div className="contenedorMail w-1/4 flex justify-left items-center">

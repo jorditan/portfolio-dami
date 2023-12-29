@@ -1,6 +1,6 @@
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { useEffect, useState, useRef } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 function DropDown() {
@@ -15,16 +15,17 @@ function DropDown() {
           }
      }
 
+     const ocultarDrop = () => {
+          if (estado) {
+               setEstado(false);
+               setDrop('dropDown invisible');
+          }
+     };
+
      let menuRef = useRef()
 
      useEffect(() => {
-          const ocultarDrop = (e) => {
-               if (!menuRef.current.contains(e.target)) {
-                    setEstado(false);
-                    setDrop('dropDown invisible')
-               }
-          }
-          document.addEventListener('mousedown', ocultarDrop )
+          document.addEventListener('mousedown', ocultarDrop);
      })
 
      useEffect(() => {
@@ -32,13 +33,12 @@ function DropDown() {
      }, [estado]);
 
 
-
      return (
           <>
                <div className="dropDownMenu">
-                    <div className="navItem">
+                    <div className="navItem" onMouseEnter={mostrarDrop}>
                          <FaChalkboardTeacher className="iconNav" />
-                         <span className="navLink" onClick={mostrarDrop}>Clases</span>
+                         <span className="navLink">Clases</span>
                     </div>
 
                     <ul className={dropDown} ref={menuRef}>
@@ -51,7 +51,6 @@ function DropDown() {
                          </li>
                     </ul>
                </div>
-               <Outlet/>
           </>
      );
 }

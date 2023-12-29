@@ -49,7 +49,7 @@ header {
   display: flex;
   transition: 0.2s all ease-out;
   flex-direction: column;
-  top: 90%;
+  top: 110%;
   position: absolute;
   background-color: var(--color-secundario);
   z-index: 1000;
@@ -92,21 +92,21 @@ header {
   .navBar .menuHamburguesa .linea1 {
     width: 40px;
     transition: all 300ms;
-    height: 4px;
+    height: 1.5px;
     background-color: var(--color-primario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa .linea2 {
     transition: all 300ms;
     width: 30px;
-    height: 4px;
+    height: 1.5px;
     background-color: var(--color-primario);
     border-radius: 5px;
   }
   .navBar .menuHamburguesa .linea3 {
     transition: all 300ms;
     width: 20px;
-    height: 4px;
+    height: 1.5px;
     background-color: var(--color-primario);
     border-radius: 5px;
   }
@@ -114,7 +114,7 @@ header {
     margin-right: 10px;
   }
   .navBar .menuHamburguesa.pulsado .linea1 {
-    transform: rotate(45deg) translate(18px, 0px);
+    transform: rotate(45deg) translate(16px, 0px);
   }
   .navBar .menuHamburguesa.pulsado .linea2 {
     width: 40px;
@@ -123,7 +123,7 @@ header {
   }
   .navBar .menuHamburguesa.pulsado .linea3 {
     width: 40px;
-    transform: rotate(-45deg) translate(18px, -2px);
+    transform: rotate(-45deg) translate(16px, -2px);
   }
   .navBar .navList {
     display: none;
@@ -207,7 +207,7 @@ header {
   display: block;
   white-space: nowrap;
   border-right: 4px;
-  width: 22ch;
+  width: 20ch;
   animation: escribiendo 2s steps(20), puntero 0.5s infinite step-end alternate;
   overflow: hidden;
 }
@@ -269,7 +269,7 @@ header {
   transform: translateY(-3px);
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 974px) {
   #titulo {
     font-size: 3rem;
     width: auto;

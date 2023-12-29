@@ -59,7 +59,7 @@ header {
                     display: flex;
                     transition: .2s all ease-out;
                     flex-direction: column;
-                    top: 90%;
+                    top: 110%;
                     position: absolute;
                     background-color: var(--color-secundario);
                     z-index: 1000;
@@ -108,7 +108,7 @@ header {
                .linea1 {
                     width: 40px;
                     transition: all 300ms;
-                    height: 4px;
+                    height: 1.5px;
                     background-color: var(--color-primario);
                     border-radius: 5px;
                }
@@ -116,7 +116,7 @@ header {
                .linea2 {
                     transition: all 300ms;
                     width: 30px;
-                    height: 4px;
+                    height: 1.5px;
                     background-color: var(--color-primario);
                     border-radius: 5px;
                }
@@ -124,7 +124,7 @@ header {
                .linea3 {
                     transition: all 300ms;
                     width: 20px;
-                    height: 4px;
+                    height: 1.5px;
                     background-color: var(--color-primario);
                     border-radius: 5px;
                }
@@ -133,7 +133,7 @@ header {
                     margin-right: 10px;
 
                     .linea1 {
-                         transform: rotate(45deg) translate(18px, 0px);
+                         transform: rotate(45deg) translate(16px, 0px);
                     }
 
                     .linea2 {
@@ -144,7 +144,7 @@ header {
 
                     .linea3 {
                          width: 40px;
-                         transform: rotate(-45deg) translate(18px, -2px);
+                         transform: rotate(-45deg) translate(16px, -2px);
                     }
                }
           }
@@ -248,7 +248,7 @@ header {
           display: block;
           white-space: nowrap;
           border-right: 4px;
-          width: 22ch;
+          width: 20ch;
           animation: escribiendo 2s steps(20),
                puntero .5s infinite step-end alternate;
 
@@ -325,7 +325,7 @@ header {
      }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 974px) {
      #titulo {
           font-size: 3rem;
           width: auto;
