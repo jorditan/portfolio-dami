@@ -43,11 +43,11 @@ function DropDown() {
 
                     <ul className={dropDown} ref={menuRef}>
                          <li>
-                              <Link to="/InfoClases" className="navLink">Info</Link>
+                              <Link to="/infoClases" className="navLink">Info</Link>
                          </li>
 
                          <li>
-                              <Link to="/PresupuestoClases" className="navLink">Presupuesto</Link>
+                              <Link to="/presupuestoClases" className="navLink">Presupuesto</Link>
                          </li>
                     </ul>
                </div>

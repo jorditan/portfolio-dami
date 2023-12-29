@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Reproductor from "./Reproductor";
 import InfoMain from './InfoMain';
 import Alerta from './Alert';
+import OfertaFlotante from './OfertaFlotante';
 
 function Main() {
      useEffect(() => {
@@ -33,6 +34,7 @@ function Main() {
                     <Reproductor />
                     <InfoMain mostrarAlerta={mostrarAlerta} />
                     <Alerta display={display} />
+                    <OfertaFlotante/>
                </section>
           </>
      );

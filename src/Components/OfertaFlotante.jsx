@@ -1,21 +1,36 @@
 import { Button, Popover } from "keep-react";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-export const PopoverComponent = () => {
+
+function OfertaFlotante() {
+     useEffect(() => {
+          AOS.init({
+               duration: 1000,
+          });
+     }, [])
+
      return (
-          <Popover trigger="hover">
-               <Popover.Title>Popover title here</Popover.Title>
-               <Popover.Description>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                    some form, by injected humour
-               </Popover.Description>
-               <Popover.Container>
-                    <Button type="outlinePrimary" size="xs">
-                         Checkout
-                    </Button>
-               </Popover.Container>
-               <Popover.Action>
-                    <Button size="xs">Popover</Button>
-               </Popover.Action>
-          </Popover>
-     )
+          <div className={`fixed bottom-0 pb-10 left-4 z-10 right-4 ease-in duration-300 flex justify-end`} data-aos='fade-left'>
+               <Popover position='top-end'>
+                    <Popover.Title>15% de descuento en tus clases</Popover.Title>
+                    <Popover.Description>
+                         ¿Querés aprender a tocar el piano y/o la guitarra de forma 100% personalizada?
+                         No pierdas el tiempo y hablame 😉.
+                    </Popover.Description>
+                    <Popover.Container>
+                         <Button type="outlineGray" size="xs">
+                              <Link to="/clases">Ir a la oferta</Link>
+                         </Button>
+                    </Popover.Container>
+                    <Popover.Action>
+                         <Button size="xs" className="text-[#303030]">¡Oferta disponible!</Button>
+                    </Popover.Action>
+               </Popover>
+          </div>
+     );
 }
+
+export default OfertaFlotante;
