@@ -1,0 +1,12 @@
+@import './utils.css';
+
+/*------------------- Composiciones section -------------------------*/
+
+#composiciones {
+     min-height: 100vh;
+     background-image: linear-gradient(to left, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+
+     .contenedorBienvenida {
+          padding: 5em 6em 5em 6em;
+     }
+}

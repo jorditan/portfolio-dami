@@ -1,122 +1,5 @@
 @charset "UTF-8";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-* {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.row {
-  flex-direction: row;
-}
-
-html::-webkit-scrollbar {
-  width: 5px;
-  background-color: var(--color-secundario);
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #d9d9d9;
-  height: 4px;
-}
-
-.invisible {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  display: none;
-}
-
-.none {
-  display: none;
-}
-
-.column {
-  flex-direction: column;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-i {
-  cursor: pointer;
-}
-
-.transparent {
-  background-color: transparent;
-  transition: 0.4s all ease-out;
-}
-
-.navBarResponsive {
-  background-color: #fafafa;
-  transition: 0.4s all ease-out;
-}
-
-.navBarNegra {
-  background-color: var(--color-secundario);
-  transition: 0.4s all ease-out;
-  opacity: 0.8;
-}
-.navBarNegra .navList .navItem {
-  color: var(--color-primario);
-}
-.navBarNegra .navList .navItem .navLink {
-  color: var(--color-primario);
-}
-.navBarNegra .navList .navItem .navIcon {
-  color: var(--color-primario);
-}
-
-.navBarBlanca {
-  background-color: var(--color-primario);
-  transition: 0.4s all ease-out;
-  opacity: 0.8;
-}
-.navBarBlanca .navList .navItem {
-  color: var(--color-secundario);
-}
-.navBarBlanca .navList .navItem .navLink {
-  color: var(--color-secundario);
-}
-.navBarBlanca .navList .navItem .navIcon {
-  color: var(--color-secundario);
-}
-
-:root {
-  --color-primario: #fafafa;
-  --color-secundario: #303030;
-  --enfasis: #1d1d1d;
-  --sombra: 10px 10px 226px -73px rgba(0, 0, 0, 0.75);
-}
-
-.enfasis {
-  color: var(--enfasis);
-  font-weight: bolder;
-}
-
-.sombra {
-  box-shadow: var(--sombra);
-}
-
+@import './utils.css';
 /*-------------------- ESTILOS NAVBAR ------------------------------*/
 header {
   height: 48px;
@@ -512,7 +395,7 @@ header {
 /*------------------------- SECCION ABOUT ----------------*/
 #about {
   height: auto;
-  padding: 6em 4em 8em 6em;
+  padding: 6em 6em 8em 6em;
   background-image: linear-gradient(to left bottom, #747474, #949494, #b5b5b5, #d7d7d7, var(--color-primario));
 }
 #about .contenedorInfoAbout {
@@ -534,7 +417,7 @@ header {
   align-items: center;
 }
 #about #cardAbout {
-  padding-top: 4em;
+  padding-top: 8em;
 }
 #about #cardAbout .contenedorCard {
   width: 100%;
