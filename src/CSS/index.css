@@ -327,6 +327,9 @@ header {
   }
 }
 @media screen and (max-width: 370px) {
+  #inicio {
+    padding-top: 4em;
+  }
   #inicio .contenedorTitulo {
     padding-left: 1em;
   }
@@ -467,19 +470,19 @@ header {
   transform: translateY(-10px);
 }
 #about #cardAbout .contenedorCard .proyectosPersonales {
-  background-image: url("../assets/img/Saturnalia.png");
+  background-image: url("../assets/img/Saturnalia.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #about #cardAbout .contenedorCard .clases {
-  background-image: url("../assets/img/FotoDamiPortfolio.png");
+  background-image: url("../assets/img/FotoDamiPortfolio.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 970px) {
   #about {
     padding: 2em 2em 4em 2em;
   }
@@ -502,12 +505,20 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 514px) {
+  #about .contenedorInfoAbout .presentacion h2 {
+    font-size: 2.8rem;
+  }
+}
 @media screen and (max-width: 370px) {
   #about {
     padding: 2em 2em 4em 1em;
   }
   #about .contenedorInfoAbout .presentacion {
     padding-left: 0;
+  }
+  #about .contenedorInfoAbout .presentacion h2 {
+    font-size: 2rem;
   }
 }
 /*------------------------ SECCIÓN FOOTER -------------------*/

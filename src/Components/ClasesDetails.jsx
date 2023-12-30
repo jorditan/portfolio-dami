@@ -1,12 +1,11 @@
 import Motivo from './Motivo'
-import FotoCard from '../assets/img/FotoCard.png'
 
 function ClasesDetails() {
 
      const motivos = [
           {
                texto: 'Porque priorizamos tus gustos musicales y tenemos en cuenta la razón por la que empezaste. 🎵',
-               img: 'src/assets/img/fotoReproductor.jpg',
+               img: 'src/assets/img/FotoDamiPortfolio.webp',
           },
           {
                texto: 'Porque respetamos tiempos y tus necesidades. Cada cual aprende a su ritmo. ⏳',

@@ -1,4 +1,4 @@
-import fotoReproductor from '../assets/img/fotoReproductor.png';
+import FotoDamiMain from '../assets/img/FotoDamiMain.webp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -12,7 +12,7 @@ function CardPresentacion() {
      return (
           <div className="contenedorReproductor flex column" data-aos="fade-up">
                <div className="contenedorImagen">
-                    <img src={fotoReproductor} alt="" />
+                    <img src={FotoDamiMain} alt="Damián Nahuel Jordán" />
                </div>
 
                <div className="contenedorTextoRep flex column">
