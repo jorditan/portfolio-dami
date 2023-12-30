@@ -1,7 +1,6 @@
 import Motivo from './Motivo'
-
 function ClasesDetails() {
-
+     
      const motivos = [
           {
                texto: 'Porque priorizamos tus gustos musicales y tenemos en cuenta la razón por la que empezaste. 🎵',

@@ -1,7 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { CardComponent } from './CardAbout';
 import CardInicio from './CardInicio';
 
 
@@ -30,10 +29,7 @@ function About() {
                               estudiantes.
                          </p>
                     </div>
-
-                    <CardComponent/>
                </div>
-
                <CardInicio />
           </section>
      );

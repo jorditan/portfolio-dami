@@ -1,87 +1,92 @@
 @import './utils.css';
 
 #clasesMain {
-     gap: 30px;
      height: auto;
      background-image: linear-gradient(to right, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+}
 
-     #bienvenida,
-     #detailsClases {
-          padding: 6em 4em 6em 4em;
-     }
+#bienvenida,
+#detailsClases {
+     padding: 6em 4em 6em 4em;
+}
 
-     #bienvenida {
-          .contenedorBienvenida {
-               width: 100%;
-               height: 50%;
-          }
-     }
-
-     #detailsClases {
+#bienvenida {
+     .contenedorBienvenida {
+          width: 100%;
           height: 50%;
-          padding-top: 6em;
+     }
+}
 
-          .contenedorMotivos {
-               .motivo {
-                    .imagenMotivo {
-                         height: 100%;
-                         width: 40%;
-                         background-color: #e4e0e0;
-                         border-radius: 2px;
+#detailsClases {
+     height: 50%;
+     padding-top: 6em;
 
-                         img {
-                              height: 98%;
-                              width: 98%;
-                              padding: .2em;
-                              object-fit: cover;
-                         }
+     .contenedorMotivos {
+          .motivo {
+               .imagenMotivo {
+                    height: 100%;
+                    width: 40%;
+                    background-color: #e4e0e0;
+                    border-radius: 2px;
+
+                    img {
+                         height: 98%;
+                         width: 98%;
+                         padding: .2em;
+                         object-fit: cover;
                     }
                }
           }
      }
 }
 
-@media screen and (max-width: 658px) {
-     #clasesMain {
-          #bienvenida {
-               .contenedorBienvenida {
-                    h1 {
-                         font-size: 3rem;
-                    }
-               }
+@media screen and (max-width: 954px) {
+     #bienvenida, #detailsClases {
+          padding-left: 2em;
+          padding-right: 2em;
+     }
+}
 
-               #opiniones {
-                    flex-direction: column;
+@media screen and (max-width: 658px) {
+     #bienvenida {
+          .contenedorBienvenida {
+               h1 {
+                    font-size: 3rem;
                }
           }
 
-          #detailsClases {
-               h2 {
-                    font-size: 3rem;
-               }
+          #opiniones {
+               flex-direction: column;
+          }
+     }
 
-               .contenedorMotivos {
-                    padding-top: 7em;
-                    .motivo {
-                         flex-direction: column;
-                         height: auto;
-                         gap: 50px;
+     #detailsClases {
+          h2 {
+               font-size: 3rem;
+          }
 
-                         .textoMotivo {
-                              width: 100%;
+          .contenedorMotivos {
+               padding-top: 7em;
 
-                              p {
-                                   font-size: 1rem;
-                              }
+               .motivo {
+                    flex-direction: column;
+                    height: auto;
+                    gap: 50px;
+
+                    .textoMotivo {
+                         width: 100%;
+
+                         p {
+                              font-size: 1rem;
                          }
+                    }
 
-                         .imagenMotivo {
-                              width: 100%;
+                    .imagenMotivo {
+                         width: 100%;
+                         height: 60%;
+
+                         img {
                               height: 60%;
-                              
-                              img {
-                                   height: 60%;
-                              }
                          }
                     }
                }
@@ -90,42 +95,41 @@
 }
 
 @media screen and (max-width: 474px) {
-     #clasesMain {
-          #bienvenida {
-               .contenedorBienvenida {
-                    h1 {
-                         font-size: 2rem;
-                    }
-               }
-          }
-
-          #detailsClases {
-               h2 {
+     #bienvenida {
+          .contenedorBienvenida {
+               h1 {
                     font-size: 2rem;
                }
+          }
+     }
 
-               .contenedorMotivos {
-                    padding-top: 7em;
-                    .motivo {
-                         flex-direction: column;
-                         height: auto;
-                         gap: 50px;
+     #detailsClases {
+          h2 {
+               font-size: 2rem;
+          }
 
-                         .textoMotivo {
-                              width: 100%;
+          .contenedorMotivos {
+               padding-top: 7em;
 
-                              p {
-                                   font-size: 1rem;
-                              }
+               .motivo {
+                    flex-direction: column;
+                    height: auto;
+                    gap: 50px;
+
+                    .textoMotivo {
+                         width: 100%;
+
+                         p {
+                              font-size: 1rem;
                          }
+                    }
 
-                         .imagenMotivo {
-                              width: 100%;
+                    .imagenMotivo {
+                         width: 100%;
+                         height: 60%;
+
+                         img {
                               height: 60%;
-                              
-                              img {
-                                   height: 60%;
-                              }
                          }
                     }
                }
@@ -133,43 +137,43 @@
      }
 }
 
-@media screen and (max-width: 354px) {
-     #clasesMain {
-          #bienvenida {
-               .contenedorBienvenida {
-                    h1 {
-                         font-size: 1.8rem;
-                    }
-               }
-          }
 
-          #detailsClases {
-               h2 {
+@media screen and (max-width: 354px) {
+     #bienvenida {
+          .contenedorBienvenida {
+               h1 {
                     font-size: 1.8rem;
                }
+          }
+     }
 
-               .contenedorMotivos {
-                    padding-top: 7em;
-                    .motivo {
-                         flex-direction: column;
-                         height: auto;
-                         gap: 50px;
+     #detailsClases {
+          h2 {
+               font-size: 1.8rem;
+          }
 
-                         .textoMotivo {
-                              width: 100%;
+          .contenedorMotivos {
+               padding-top: 7em;
 
-                              p {
-                                   font-size: .8rem;
-                              }
+               .motivo {
+                    flex-direction: column;
+                    height: auto;
+                    gap: 50px;
+
+                    .textoMotivo {
+                         width: 100%;
+
+                         p {
+                              font-size: .8rem;
                          }
+                    }
 
-                         .imagenMotivo {
-                              width: 100%;
+                    .imagenMotivo {
+                         width: 100%;
+                         height: 60%;
+
+                         img {
                               height: 60%;
-                              
-                              img {
-                                   height: 60%;
-                              }
                          }
                     }
                }

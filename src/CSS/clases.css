@@ -1,28 +1,30 @@
 @import './utils.css';
 #clasesMain {
-  gap: 30px;
   height: auto;
   background-image: linear-gradient(to right, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
 }
-#clasesMain #bienvenida,
-#clasesMain #detailsClases {
+
+#bienvenida,
+#detailsClases {
   padding: 6em 4em 6em 4em;
 }
-#clasesMain #bienvenida .contenedorBienvenida {
+
+#bienvenida .contenedorBienvenida {
   width: 100%;
   height: 50%;
 }
-#clasesMain #detailsClases {
+
+#detailsClases {
   height: 50%;
   padding-top: 6em;
 }
-#clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo {
+#detailsClases .contenedorMotivos .motivo .imagenMotivo {
   height: 100%;
   width: 40%;
   background-color: #e4e0e0;
   border-radius: 2px;
 }
-#clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo img {
+#detailsClases .contenedorMotivos .motivo .imagenMotivo img {
   height: 98%;
   width: 98%;
   padding: 0.2em;
@@ -30,93 +32,99 @@
      object-fit: cover;
 }
 
+@media screen and (max-width: 954px) {
+  #bienvenida, #detailsClases {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
 @media screen and (max-width: 658px) {
-  #clasesMain #bienvenida .contenedorBienvenida h1 {
+  #bienvenida .contenedorBienvenida h1 {
     font-size: 3rem;
   }
-  #clasesMain #bienvenida #opiniones {
+  #bienvenida #opiniones {
     flex-direction: column;
   }
-  #clasesMain #detailsClases h2 {
+  #detailsClases h2 {
     font-size: 3rem;
   }
-  #clasesMain #detailsClases .contenedorMotivos {
+  #detailsClases .contenedorMotivos {
     padding-top: 7em;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo {
+  #detailsClases .contenedorMotivos .motivo {
     flex-direction: column;
     height: auto;
     gap: 50px;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .textoMotivo {
+  #detailsClases .contenedorMotivos .motivo .textoMotivo {
     width: 100%;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .textoMotivo p {
+  #detailsClases .contenedorMotivos .motivo .textoMotivo p {
     font-size: 1rem;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo {
+  #detailsClases .contenedorMotivos .motivo .imagenMotivo {
     width: 100%;
     height: 60%;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo img {
+  #detailsClases .contenedorMotivos .motivo .imagenMotivo img {
     height: 60%;
   }
 }
 @media screen and (max-width: 474px) {
-  #clasesMain #bienvenida .contenedorBienvenida h1 {
+  #bienvenida .contenedorBienvenida h1 {
     font-size: 2rem;
   }
-  #clasesMain #detailsClases h2 {
+  #detailsClases h2 {
     font-size: 2rem;
   }
-  #clasesMain #detailsClases .contenedorMotivos {
+  #detailsClases .contenedorMotivos {
     padding-top: 7em;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo {
+  #detailsClases .contenedorMotivos .motivo {
     flex-direction: column;
     height: auto;
     gap: 50px;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .textoMotivo {
+  #detailsClases .contenedorMotivos .motivo .textoMotivo {
     width: 100%;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .textoMotivo p {
+  #detailsClases .contenedorMotivos .motivo .textoMotivo p {
     font-size: 1rem;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo {
+  #detailsClases .contenedorMotivos .motivo .imagenMotivo {
     width: 100%;
     height: 60%;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo img {
+  #detailsClases .contenedorMotivos .motivo .imagenMotivo img {
     height: 60%;
   }
 }
 @media screen and (max-width: 354px) {
-  #clasesMain #bienvenida .contenedorBienvenida h1 {
+  #bienvenida .contenedorBienvenida h1 {
     font-size: 1.8rem;
   }
-  #clasesMain #detailsClases h2 {
+  #detailsClases h2 {
     font-size: 1.8rem;
   }
-  #clasesMain #detailsClases .contenedorMotivos {
+  #detailsClases .contenedorMotivos {
     padding-top: 7em;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo {
+  #detailsClases .contenedorMotivos .motivo {
     flex-direction: column;
     height: auto;
     gap: 50px;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .textoMotivo {
+  #detailsClases .contenedorMotivos .motivo .textoMotivo {
     width: 100%;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .textoMotivo p {
+  #detailsClases .contenedorMotivos .motivo .textoMotivo p {
     font-size: 0.8rem;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo {
+  #detailsClases .contenedorMotivos .motivo .imagenMotivo {
     width: 100%;
     height: 60%;
   }
-  #clasesMain #detailsClases .contenedorMotivos .motivo .imagenMotivo img {
+  #detailsClases .contenedorMotivos .motivo .imagenMotivo img {
     height: 60%;
   }
 }/*# sourceMappingURL=clases.css.map */
