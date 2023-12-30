@@ -1,10 +1,10 @@
-import fotoReproductor from '../assets/img/fotoReproductor.jpg';
+import fotoReproductor from '../assets/img/fotoReproductor.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 // import Botones from './Botones'
 
-function Reproductor() {
+function CardPresentacion() {
 
      useEffect(() => {
           AOS.init();
@@ -28,4 +28,4 @@ function Reproductor() {
      );
 }
 
-export default Reproductor;
+export default CardPresentacion;

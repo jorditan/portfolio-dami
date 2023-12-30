@@ -61,7 +61,7 @@ function NavBar() {
                                    <Link onClick={cerrarMenu} to="/micarrera" className="navLink">Mi carrera</Link>
                               </li>
 
-                              <DropDown />
+                              <DropDown menuNav={menuNav} activado={activado} cerrarMenu={cerrarMenu} />
                          </ul>
 
                          <div className={`menuHamburguesa flex column ${!pulsado ? '' : 'pulsado'}`} onClick={mostrarMenu}>

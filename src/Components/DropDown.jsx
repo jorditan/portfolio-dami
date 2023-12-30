@@ -7,15 +7,17 @@ function DropDown() {
      const [estado, setEstado] = useState(false);
      const [dropDown, setDrop] = useState('dropDown');
 
-     const mostrarDrop = (e) => {
-          e.preventDefault();
+     const mostrarDrop = () => {
+          setEstado(!estado);
           if (estado == false) {
-               setEstado(true);
+               setDrop('dropDown invisible');
+          } else {
                setDrop('dropDown visible')
           }
      }
 
-     const ocultarDrop = () => {
+     const ocultarDrop = (e) => {
+          e.preventDefault()
           if (estado) {
                setEstado(false);
                setDrop('dropDown invisible');
@@ -25,10 +27,6 @@ function DropDown() {
      let menuRef = useRef()
 
      useEffect(() => {
-          document.addEventListener('mousedown', ocultarDrop);
-     })
-
-     useEffect(() => {
           setDrop(estado ? 'dropDown visible' : 'dropDown invisible');
      }, [estado]);
 
@@ -36,12 +34,12 @@ function DropDown() {
      return (
           <>
                <div className="dropDownMenu">
-                    <div className="navItem" onMouseEnter={mostrarDrop}>
+                    <div className="navItem" onClick={mostrarDrop}>
                          <FaChalkboardTeacher className="iconNav" />
                          <span className="navLink">Clases</span>
                     </div>
 
-                    <ul className={dropDown} ref={menuRef}>
+                    <ul className={dropDown} ref={menuRef} onMouseLeave={ocultarDrop}>
                          <li>
                               <Link to="/infoClases" className="navLink">Info</Link>
                          </li>

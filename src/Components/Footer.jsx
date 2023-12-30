@@ -18,7 +18,7 @@ function Footer() {
 
                     <section className="contenedorInfoFooter">
                          <div className="contenedor flex pt-2 pl-24 column h-full">
-                              <h6 className="text-md text-[#afaeb4] font-bold">Más información</h6>
+                              <h3 className="text-md text-[#afaeb4] font-bold">Más información</h3>
                               <ul className="dudasList flex column gap-3 h-full justify-center">
                                    <li className="dudasList">
                                         <a href="" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 text-center hover:text-[#c7c7c7]">Mi experiencia</a>
@@ -36,7 +36,7 @@ function Footer() {
 
                     <section className="contenedorInfoFooter">
                          <div className="contenedorRedesList flex column pt-2 h-full">
-                              <h6 className="text-md text-[#afaeb4] font-bold">Redes sociales</h6>
+                              <h3 className="text-md text-[#afaeb4] font-bold">Redes sociales</h3>
                               <ul className="redesList flex column gap-3 h-full justify-center">
                                    <li className="redesItemf">
                                         <a className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]" href="https://www.facebook.com/damianjmusica" target="blank"><FaFacebook/>Facebook</a>
