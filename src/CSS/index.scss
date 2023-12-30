@@ -191,7 +191,7 @@ header {
                     justify-content: center;
 
                     .dropDown {
-                         top: 60%;
+                         top: 380px;
                          left: 11%;
                          background-color: var(--color-primario);
                          width: 80%;
@@ -212,6 +212,7 @@ header {
           }
      }
 }
+
 
 @media screen and (max-width: 583px) {
      header {

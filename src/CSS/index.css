@@ -163,7 +163,7 @@ header {
     justify-content: center;
   }
   .navBar .navList .dropDownMenu .dropDown {
-    top: 60%;
+    top: 380px;
     left: 11%;
     background-color: var(--color-primario);
     width: 80%;

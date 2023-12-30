@@ -19,11 +19,6 @@ function CardPresentacion() {
                     <p className='text-lg  font-semibold text-[#303030] '>¡Bienvenidos a mi portfolio!</p>
                     <p className='text-lg font-semibold text-[#303030]'>¿Quéres conocerme más? Deslizá hacia abajo.</p>
                </div>
-               
-               {/* <Botones/> */}
-
-               <p className='nombreDeLaCancion'></p>
-
           </div>
      );
 }

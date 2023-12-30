@@ -1,8 +1,11 @@
-import ComposicionesMain from '../Components/ComposicionesMain'
+import ComposicionesMain from '../Components/ComposicionesMain';
+import '../CSS/composiciones.css';
 
 function Composiciones() {
      return (
-          <ComposicionesMain/>
+          <main>
+               <ComposicionesMain />
+          </main>
      );
 }
 

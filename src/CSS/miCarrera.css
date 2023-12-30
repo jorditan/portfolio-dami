@@ -1,0 +1,15 @@
+@import url("./utils.css");
+#carrera {
+  height: auto;
+  padding: 4em 6em 8em 6em;
+  background-image: linear-gradient(to bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+}
+
+#timeLapse #primero {
+  background-image: url(../assets/img/DamiTimeLine1.webp);
+  background-size: cover;
+  background-position: center;
+}
+#timeLapse #primero .contenedorTimeLapse {
+  background-color: rgba(48, 48, 48, 0.6980392157);
+}/*# sourceMappingURL=miCarrera.css.map */

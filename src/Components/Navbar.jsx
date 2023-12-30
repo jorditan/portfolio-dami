@@ -7,7 +7,7 @@ import { IoHome } from "react-icons/io5";
 import DropDown from '../Components/DropDown';
 
 function NavBar() {
-     
+
      const [activado, setActivado] = useState(false);
      const [pulsado, setPulsado] = useState(false);
      const [menuNav, setMenuNav] = useState('navList');
@@ -34,34 +34,41 @@ function NavBar() {
      }
 
      useEffect(() => {
-          document.addEventListener('scroll',() => {
+          document.addEventListener('scroll', () => {
                if (window.scrollY > 0 || activado != false) {
                     setColorNav('navBarNegra');
                } else {
                     setColorNav('transparent')
                }
           })
-     },[activado])
+     }, [activado])
 
 
      return (
           <>
                <header>
-                    <nav className={`navBar ${colorNav}`}>                    
+                    <nav className={`navBar ${colorNav}`}>
                          <ul className={menuNav}>
-                              <li className="navItem"><IoHome className="iconNav"/>
-                                   <Link onClick={cerrarMenu}  to="/" className="navLink">Inicio</Link>
+                              <li className="navItem"><IoHome className="iconNav" />
+                                   <Link onClick={cerrarMenu} to="/" className="navLink">Inicio</Link>
                               </li>
 
-                              <li className="navItem"><LuListMusic className="iconNav"/>
-                                   <Link onClick={cerrarMenu}  to="/composiciones" className="navLink" >Composiciones</Link>
+                              <li className="navItem"><LuListMusic className="iconNav" />
+                                   <Link onClick={cerrarMenu} to="/composiciones" className="navLink" >Composiciones</Link>
                               </li>
 
-                              <li className="navItem"><GoInfo className="iconNav"/>
+                              <li className="navItem"><GoInfo className="iconNav" />
                                    <Link onClick={cerrarMenu} to="/micarrera" className="navLink">Mi carrera</Link>
                               </li>
 
-                              <DropDown menuNav={menuNav} activado={activado} cerrarMenu={cerrarMenu} />
+                              <DropDown
+                                   menuNav={menuNav}
+                                   activado={activado}
+                                   cerrarMenu={cerrarMenu}
+                                   colorNav={colorNav}
+                                   pulsado={pulsado}
+
+                              />
                          </ul>
 
                          <div className={`menuHamburguesa flex column ${!pulsado ? '' : 'pulsado'}`} onClick={mostrarMenu}>
@@ -71,7 +78,7 @@ function NavBar() {
                          </div>
                     </nav>
                </header>
-               <Outlet/>
+               <Outlet />
           </>
      );
 }

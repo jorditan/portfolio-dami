@@ -3,9 +3,11 @@ import { useEffect, useState, useRef } from "react";
 import { Link} from "react-router-dom";
 
 
-function DropDown() {
+function DropDown({activado, pulsado, colorNav, menuNav, cerrarMenu}) {
      const [estado, setEstado] = useState(false);
      const [dropDown, setDrop] = useState('dropDown');
+
+     
 
      const mostrarDrop = () => {
           setEstado(!estado);
@@ -41,11 +43,11 @@ function DropDown() {
 
                     <ul className={dropDown} ref={menuRef} onMouseLeave={ocultarDrop}>
                          <li>
-                              <Link to="/infoClases" className="navLink">Info</Link>
+                              <Link onClick={()=> cerrarMenu()} to="/infoClases" className="navLink">Info</Link>
                          </li>
 
                          <li>
-                              <Link to="/presupuestoClases" className="navLink">Presupuesto</Link>
+                              <Link onClick={()=> cerrarMenu()} to="/presupuestoClases" className="navLink">Presupuesto</Link>
                          </li>
                     </ul>
                </div>

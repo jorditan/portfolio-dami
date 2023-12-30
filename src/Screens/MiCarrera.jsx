@@ -1,7 +1,14 @@
+import CarreraMain from "../Components/CarreraMain";
+import CarreraTimeLapse from "../Components/CarraTimeLapse";
+import '../CSS/miCarrera.css'
+
 function MiCarrera() {
      return (
           <>
-               <h1>Mi carrera</h1>
+               <main>
+                    <CarreraMain />
+                    <CarreraTimeLapse/>
+               </main>
           </>
      );
 }
