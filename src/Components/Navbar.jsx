@@ -50,15 +50,15 @@ function NavBar() {
                     <nav className={`navBar ${colorNav}`}>
                          <ul className={menuNav}>
                               <li className="navItem"><IoHome className="iconNav" />
-                                   <Link onClick={cerrarMenu} to="/" className="navLink">Inicio</Link>
+                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/" className="navLink">Inicio</Link>
                               </li>
 
                               <li className="navItem"><LuListMusic className="iconNav" />
-                                   <Link onClick={cerrarMenu} to="/composiciones" className="navLink" >Composiciones</Link>
+                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/composiciones" className="navLink" >Composiciones</Link>
                               </li>
 
                               <li className="navItem"><GoInfo className="iconNav" />
-                                   <Link onClick={cerrarMenu} to="/micarrera" className="navLink">Mi carrera</Link>
+                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/micarrera" className="navLink">Mi carrera</Link>
                               </li>
 
                               <DropDown

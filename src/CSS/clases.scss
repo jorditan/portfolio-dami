@@ -24,7 +24,7 @@
      .contenedorMotivos {
           .motivo {
                .imagenMotivo {
-                    height: 100%;
+                    height: 18em;
                     width: 40%;
                     background-color: #e4e0e0;
                     border-radius: 2px;
@@ -40,8 +40,13 @@
      }
 }
 
+#contenedorModalidades {
+     padding: 0 4em 6em 4em;
+     min-height: 100vh;
+}
+
 @media screen and (max-width: 954px) {
-     #bienvenida, #detailsClases {
+     #bienvenida, #detailsClases, #contenedorModalidades {
           padding-left: 2em;
           padding-right: 2em;
      }
@@ -94,6 +99,29 @@
      }
 }
 
+@media screen and (max-width: 822px) {
+     #contenedorModalidades {
+          h2 {
+               font-size: 2rem;
+          }
+
+          .contenedor {
+               flex-direction: column;
+               gap: 30px;
+
+               button {
+                    width: 100%;
+               }
+          }
+
+          .contenedorDetails {
+               button {
+                    width: 100%;
+               }
+          }
+     }
+}
+
 @media screen and (max-width: 474px) {
      #bienvenida {
           .contenedorBienvenida {
@@ -132,6 +160,19 @@
                               height: 60%;
                          }
                     }
+               }
+          }
+     }
+
+     #contenedorModalidades {
+          h2 {
+               font-size: 1.5rem
+          };
+
+          .contenedorDetails {
+               width: 100%;
+               h5 {
+                    font-size: 2rem;
                }
           }
      }
@@ -180,3 +221,4 @@
           }
      }
 }
+

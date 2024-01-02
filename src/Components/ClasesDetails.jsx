@@ -8,15 +8,15 @@ function ClasesDetails() {
           },
           {
                texto: 'Porque respetamos tiempos y tus necesidades. Cada cual aprende a su ritmo. ⏳',
-               img: '',
+               img: 'src/assets/img/FotoDamiCard.webp',
           },
           {
                texto: 'No nos basamos en un método antiguo donde no disfrutas lo que haces. La idea es que aprendas y te diviertas.',
-               img: '',
+               img: 'src/assets/img/FotoDamiPiano2.webp',
           },
           {
                texto: 'Podés elegir la modalidad que te resulte más cómoda. ¡No dejes de hacer tus cosas y aprovechá esta ventaja!',
-               img: '',
+               img: 'src/assets/img/FotoDamiGuitarra.webp',
           },
      ]
 

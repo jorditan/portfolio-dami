@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import CardOpinion from './CardOpinion';
 import ClasesDetails from './ClasesDetails';
+import ClasesInfo from './ClasesInfo';
 
 function ClasesMain() {
 
@@ -41,6 +42,7 @@ function ClasesMain() {
                </section>
 
                <ClasesDetails/>
+               <ClasesInfo/>
           </main>
      );
 }

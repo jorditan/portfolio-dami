@@ -214,7 +214,7 @@ header {
   display: block;
   white-space: nowrap;
   border-right: 4px;
-  width: 20ch;
+  width: 21ch;
   animation: escribiendo 2s steps(20), puntero 0.5s infinite step-end alternate;
   overflow: hidden;
 }
