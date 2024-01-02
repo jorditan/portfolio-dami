@@ -4,7 +4,10 @@
   background-image: linear-gradient(to right, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
 }
 
-#bienvenida,
+#bienvenida {
+  padding: 6em 4em 2em 4em;
+}
+
 #detailsClases {
   padding: 6em 4em 6em 4em;
 }
@@ -93,6 +96,9 @@
 @media screen and (max-width: 474px) {
   #bienvenida .contenedorBienvenida h1 {
     font-size: 2rem;
+  }
+  #bienvenida #opiniones .chat .chat-bubble {
+    font-size: 12px;
   }
   #detailsClases h2 {
     font-size: 2rem;
