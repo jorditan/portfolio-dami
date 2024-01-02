@@ -1,20 +1,88 @@
 @import URL('./utils.css');
 
+main {
+     background-image: linear-gradient(to right bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);}
 
 #carrera {
-     height: auto;
      padding: 4em 6em 8em 6em;
-     background-image: linear-gradient(to bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+     height: auto;
 }
 
 #timeLapse {
      #primero {
-          background-image: url(../assets/img/DamiTimeLine1.webp);
-          background-size: cover;
-          background-position: center;
-
           .contenedorTimeLapse {
-               background-color: #303030b2;
+               padding: 0 6em 4em 6em;
+
+               ul {
+                    li:nth-child(even) {
+                         .container {
+                              text-align: start;
+                              grid-column-start: 3;
+                              grid-column-end: 4;
+                              grid-row-start: 1;
+                              grid-row-end: 4;
+                              align-self: center;
+                              justify-self: start;
+                         }
+                    }
+               }
+          }
+     }
+
+     #segundo {
+          background-color: #303030;
+     }
+}
+
+@media screen and (max-width:911px) {
+     #carrera {
+          padding: 4em 2em 4em 2em;
+     }
+
+     #timeLapse {
+          #primero {
+               .contenedorTimeLapse {
+                    padding: 0 2em 4em 1em;
+               }
+          }
+     }
+}
+
+@media screen and (max-width: 768px) {
+     #timeLapse {
+          #primero {
+               .contenedorTimeLapse {
+                    .timeline {
+                         li {
+                              padding: 0 1em;
+
+                              time {
+                                   font-size: 1.5em;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+
+@media screen and (max-width:511px) {
+     #carrera {
+          .contenedorBienvenida {
+               .titulo {
+                    h1 {
+                         font-size: 2.8rem;
+                    }
+               }
+               .parrafos {
+                    width: 100%;
+               }
+          }
+
+          .contenedor {
+               h2 {
+                    font-size: 1.2rem;
+               }
           }
      }
 }

@@ -14,7 +14,7 @@ function CarreraMain() {
                <section id="carrera">
                     <div className="contenedorBienvenida flex column" data-aos="fade-right">
                          <div className="titulo flex column">
-                              <h1 className="text-7xl font-bold text-[#303030]">¿Cómo llegué a ser profesor?</h1>
+                              <h1 className="text-6xl font-bold text-[#303030]">¿Cómo llegué a ser profesor?</h1>
 
                               <p className="text-sm text-[#303030] pt-4">Acompañame a darle un vistazo a mi carrera...</p>
                          </div>
