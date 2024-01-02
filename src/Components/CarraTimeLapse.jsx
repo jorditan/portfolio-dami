@@ -1,7 +1,7 @@
 import TimeLapse from "./TimeLapse";
 
 function CarreraTimeLapse() {
-     return (
+     return (  
           <section id="timeLapse">
                <article id="primero">
                     <div className="contenedorTimeLapse">
