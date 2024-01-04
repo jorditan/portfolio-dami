@@ -5,7 +5,7 @@ import '../CSS/miCarrera.css'
 function MiCarrera() {
      return (
           <>
-               <main>
+               <main id="miCarrera">
                     <CarreraMain />
                     <CarreraTimeLapse/>
                </main>

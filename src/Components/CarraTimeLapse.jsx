@@ -5,7 +5,7 @@ function CarreraTimeLapse() {
 
      return (
           <section id="timeLapse">
-               <article id="primero">
+               <article className="contenedorTimeLaspe">
                     <div className="contenedorTimeLapse">
                          <TimeLapse />
                     </div>

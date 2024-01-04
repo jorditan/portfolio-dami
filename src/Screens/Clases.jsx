@@ -4,7 +4,9 @@ import '../CSS/clases.css';
 function Clases() {
      return (
           <>
-               <ClasesMain/>
+               <main id='clases'>
+                    <ClasesMain/>
+               </main>
           </>
      );
 }

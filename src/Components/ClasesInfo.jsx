@@ -42,7 +42,9 @@ function ClasesInfo() {
                     <p className="text-[#303030] font-semibold text-sm pt-6">Luego de entablar la conversación de saber que instrumento te interesa aprender, vamos a coordinar los horarios y la modalidad elegida para estudiar. ¡Así de fácil! 😉</p>
 
                     <h5 className="text-4xl text-[#303030] font-bold pt-12">¿Y los precios?</h5>
-                    <button className="btn btn-outline mt-4 hover:bg-[#303030] w-2/4"><Link to={"/presupuestosClases"}></Link>Ver presupuestos</button>
+                    <Link to={"/presupuestoClases"}>
+                         <button className="btn btn-outline mt-4 hover:bg-[#303030] w-2/4">Ver presupuestos</button>
+                    </Link>
                </div>
           </section>
      );

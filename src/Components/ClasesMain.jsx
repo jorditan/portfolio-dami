@@ -28,7 +28,7 @@ function ClasesMain() {
           },
      ]
      return (
-          <main id="clasesMain">
+          <>
                <section id='bienvenida'>
                     <div className="contenedorBienvenida" data-aos="fade-left">
                          <h1 className='text-6xl font-bold text-[#303030]'>¿Querés aprender a tocar la guitarra y/o el piano?</h1>
@@ -43,7 +43,7 @@ function ClasesMain() {
 
                <ClasesDetails/>
                <ClasesInfo/>
-          </main>
+          </>
      );
 }
 

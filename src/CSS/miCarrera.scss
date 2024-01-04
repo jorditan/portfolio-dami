@@ -4,12 +4,12 @@ main {
      background-image: linear-gradient(to right bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);}
 
 #carrera {
-     padding: 4em 6em 8em 6em;
+     padding: 5em 6em 8em 6em;
      height: auto;
 }
 
 #timeLapse {
-     #primero {
+     article {
           .contenedorTimeLapse {
                padding: 0 6em 4em 6em;
 
@@ -40,7 +40,7 @@ main {
      }
 
      #timeLapse {
-          #primero {
+          article {
                .contenedorTimeLapse {
                     padding: 0 2em 4em 1em;
                }
@@ -50,7 +50,7 @@ main {
 
 @media screen and (max-width: 768px) {
      #timeLapse {
-          #primero {
+          article {
                .contenedorTimeLapse {
                     .timeline {
                          li {

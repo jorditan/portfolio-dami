@@ -4,14 +4,14 @@ main {
 }
 
 #carrera {
-  padding: 4em 6em 8em 6em;
+  padding: 5em 6em 8em 6em;
   height: auto;
 }
 
-#timeLapse #primero .contenedorTimeLapse {
+#timeLapse article .contenedorTimeLapse {
   padding: 0 6em 4em 6em;
 }
-#timeLapse #primero .contenedorTimeLapse ul li:nth-child(even) .container {
+#timeLapse article .contenedorTimeLapse ul li:nth-child(even) .container {
   text-align: start;
   grid-column-start: 3;
   grid-column-end: 4;
@@ -28,15 +28,15 @@ main {
   #carrera {
     padding: 4em 2em 4em 2em;
   }
-  #timeLapse #primero .contenedorTimeLapse {
+  #timeLapse article .contenedorTimeLapse {
     padding: 0 2em 4em 1em;
   }
 }
 @media screen and (max-width: 768px) {
-  #timeLapse #primero .contenedorTimeLapse .timeline li {
+  #timeLapse article .contenedorTimeLapse .timeline li {
     padding: 0 1em;
   }
-  #timeLapse #primero .contenedorTimeLapse .timeline li time {
+  #timeLapse article .contenedorTimeLapse .timeline li time {
     font-size: 1.5em;
   }
 }

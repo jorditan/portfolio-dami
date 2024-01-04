@@ -1,0 +1,14 @@
+@import url("../CSS/utils.css");
+#presupuestos {
+  background-image: linear-gradient(to bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+}
+
+#infoClases {
+  padding: 5em 6em 8em 6em;
+  min-height: 100vh;
+}
+#infoClases .contenedorCards .card {
+  width: 15em;
+  background-color: #E4E4E4;
+  height: 18em;
+}/*# sourceMappingURL=presupuesto.css.map */
