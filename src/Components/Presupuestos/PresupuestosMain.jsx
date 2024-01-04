@@ -52,7 +52,7 @@ function PresupuestosMain() {
                               </p>
                          </div>
 
-                         <div className="contendorInfoPagos pt-12">
+                         <div className="contenedorInfoPagos pt-12">
                               <h2 className="text-4xl text-[#303030] font-bold">Elegí el método de pago que prefieras.</h2>
 
                               <p className="pt-6 text-lg text-[#303030] w-2/4 text-semibold">

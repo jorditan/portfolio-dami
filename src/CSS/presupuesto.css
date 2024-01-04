@@ -1,6 +1,6 @@
 @import url("../CSS/utils.css");
 #presupuestos {
-  background-image: linear-gradient(to bottom, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
+  background-image: linear-gradient(to right, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
 }
 
 #infoClases {
@@ -11,4 +11,35 @@
   width: 15em;
   background-color: #E4E4E4;
   height: 18em;
+}
+
+@media screen and (max-width: 971px) {
+  #infoClases {
+    padding: 5em 2em 4em 2em;
+  }
+}
+@media screen and (max-width: 798px) {
+  #infoClases .contenedorCards .container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 674px) {
+  .bienvenida .contenedorBienvenida h1 {
+    font-size: 3rem;
+  }
+  .bienvenida .contenedorBienvenida p {
+    width: 100%;
+  }
+  .bienvenida .contenedorInfoPagos p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 486px) {
+  .bienvenida .contenedorBienvenida h1 {
+    font-size: 2rem;
+  }
+  .bienvenida .contenedorInfoPagos h2 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=presupuesto.css.map */
