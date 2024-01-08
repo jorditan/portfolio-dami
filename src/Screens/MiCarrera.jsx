@@ -1,5 +1,5 @@
-import CarreraMain from "../Components/CarreraMain";
-import CarreraTimeLapse from "../Components/CarraTimeLapse";
+import CarreraMain from "../Components/Carrera/CarreraMain";
+import CarreraTimeLapse from "../Components/Carrera/CarraTimeLapse";
 import '../CSS/miCarrera.css'
 
 function MiCarrera() {

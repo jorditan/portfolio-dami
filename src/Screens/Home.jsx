@@ -1,5 +1,5 @@
-import Main from '../Components/Main'
-import About from '../Components/About'
+import Main from '../Components/Home/Main'
+import About from '../Components/Home/About'
 import '../CSS/index.css'
 
 function Home() {

@@ -327,6 +327,10 @@ header {
   #inicio #titulo {
     font-size: 1.5rem;
   }
+  #inicio .contenedorInfo {
+    justify-content: start;
+    padding-left: 2em;
+  }
 }
 @media screen and (max-width: 370px) {
   #inicio {

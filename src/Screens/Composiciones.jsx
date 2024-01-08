@@ -1,4 +1,4 @@
-import ComposicionesMain from '../Components/ComposicionesMain';
+import ComposicionesMain from '../Components/Composiciones/ComposicionesMain';
 import '../CSS/composiciones.css';
 
 function Composiciones() {

@@ -1,4 +1,4 @@
-import ClasesMain from '../Components/ClasesMain';
+import ClasesMain from '../Components/Clases/ClasesMain';
 import '../CSS/clases.css';
 
 function Clases() {

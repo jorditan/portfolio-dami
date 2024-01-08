@@ -56,10 +56,8 @@ function PresupuestosMain() {
                               <h2 className="text-4xl text-[#303030] font-bold">Elegí el método de pago que prefieras.</h2>
 
                               <p className="pt-6 text-lg text-[#303030] w-2/4 text-semibold">
-                                   Aprovechá y aboná las clases <span className="enfasis">individuales</span> y <span className="enfasis">mensuales</span>. Desliza hacia abajo para ver los precios.
+                                   Aprovechá y aboná las clases <span className="enfasis">individuales</span> y <span className="enfasis">mensuales</span>. Cada una de ellas tiene sus propias características y ventajas. Desliza hacia abajo para ver los precios.
                               </p>
-
-
                          </div>
                     </article>
 

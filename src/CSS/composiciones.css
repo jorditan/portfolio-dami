@@ -6,4 +6,71 @@
 }
 #composiciones .contenedorBienvenida {
   padding: 5em 6em 5em 6em;
+}
+#composiciones .contenedorCards {
+  padding: 0 6em 5em 6em;
+  width: 75%;
+  height: auto;
+}
+#composiciones .contenedorCards .cardCancion {
+  height: 15em;
+  width: auto;
+}
+#composiciones .contenedorCards .cardCancion .info {
+  width: 60%;
+  justify-content: center;
+}
+#composiciones .contenedorCards .cardCancion .info h3 {
+  font-size: 2em;
+}
+#composiciones .contenedorCards .cardCancion .botones {
+  width: 40%;
+}
+#composiciones .contenedorCards .cardCancion .botones svg {
+  font-size: 25px;
+  cursor: pointer;
+  color: #303030;
+  transition: 0.3s all ease-out;
+}
+#composiciones .contenedorCards .cardCancion .botones svg:hover {
+  transform: translateY(-5px);
+}
+#composiciones .contenedorCards .cardCancion .botones svg:active {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1250px) {
+  #composiciones .contenedorCards {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 962px) {
+  #composiciones .contenedorBienvenida {
+    padding: 4em 2em 4em 2em;
+  }
+  #composiciones .contenedorCards {
+    padding-left: 2em;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #composiciones .contenedorCards article {
+    grid-column: span 1/span 1;
+  }
+}
+@media screen and (max-width: 682px) {
+  #composiciones .contenedorBienvenida h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 556px) {
+  #composiciones .contenedorCards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 438px) {
+  #composiciones .contenedorBienvenida h1 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=composiciones.css.map */

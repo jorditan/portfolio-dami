@@ -6,7 +6,105 @@
      min-height: 100vh;
      background-image: linear-gradient(to left, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
 
-     .contenedorBienvenida {
+     .contenedorBienvenida{
           padding: 5em 6em 5em 6em;
+     }
+
+     .contenedorCards {
+          padding: 0 6em 5em 6em;
+          width: 75%;
+          height: auto;
+
+          .cardCancion {
+               height: 15em;
+               width: auto;
+
+               .info {
+                    width: 60%;
+                    justify-content: center;
+
+                    h3 {
+                         font-size: 2em;
+                    }
+               }
+
+               .botones {
+                    width: 40%;
+
+                    svg {
+                         font-size: 25px;
+                         cursor: pointer;
+                         color: #303030;
+                         transition: .3s all ease-out;
+
+                         &:hover {
+                              transform: translateY(-5px);
+                         }
+
+                         &:active {
+                              transform: scale(1.1);
+                         }
+                    }
+               }
+          }
+
+     }
+}
+
+
+@media screen and (max-width: 1250px) {
+     #composiciones {
+          .contenedorCards {
+               width: 100%;
+          }
+     }
+}
+
+@media screen and (max-width: 962px) {
+     #composiciones {
+          .contenedorBienvenida{
+               padding: 4em 2em 4em 2em;
+          }
+
+          .contenedorCards {
+               padding-left: 2em;
+               width: 100%;
+               grid-template-columns: repeat(2,1fr);
+               grid-template-rows: repeat(2,1fr);
+
+               article {
+                    grid-column:  span 1 / span 1;
+               }
+          }
+     }
+}
+
+@media screen and (max-width: 682px) {
+     #composiciones {
+          .contenedorBienvenida {
+               h1 {
+                    font-size: 3rem;
+               }
+          }
+     }
+}
+
+@media screen and (max-width: 556px) {
+     #composiciones {
+          .contenedorCards {
+               display: flex;
+               flex-direction: column;
+          }
+     }
+}
+
+
+@media screen and (max-width: 438px) {
+     #composiciones {
+          .contenedorBienvenida {
+               h1 {
+                    font-size: 2rem;
+               }
+          }
      }
 }
