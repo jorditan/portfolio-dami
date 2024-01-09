@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@madzadev/audio-player": "^1.1.11",
     "@mercadopago/sdk-react": "^0.0.16",
     "aos": "^2.3.4",
     "axios": "^1.6.3",
