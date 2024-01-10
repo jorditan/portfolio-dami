@@ -2,69 +2,108 @@
 /*------------------- Composiciones section -------------------------*/
 #composiciones {
   min-height: 100vh;
-  background-image: linear-gradient(to left, #fafafa, #d7d7d7, #b5b5b5, #949494, #747474);
 }
 #composiciones .contenedorBienvenida {
-  padding: 5em 6em 5em 6em;
+  padding: 5em 6em 0 6em;
 }
-#composiciones .contenedorCards {
+#composiciones .infoComposiciones {
+  padding: 2em 6em 5em 6em;
+}
+#composiciones .infoComposiciones div:nth-child(even) {
+  align-items: end;
+  text-align: end;
+}
+
+.contenedorCards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 0 6em 5em 6em;
   width: 75%;
   height: auto;
 }
-#composiciones .contenedorCards .cardCancion {
+.contenedorCards .cardCancion {
   height: 15em;
   width: auto;
 }
-#composiciones .contenedorCards .cardCancion .info {
+.contenedorCards .cardCancion .info {
   width: 60%;
   justify-content: center;
 }
-#composiciones .contenedorCards .cardCancion .info h3 {
+.contenedorCards .cardCancion .info h3 {
   font-size: 2em;
 }
-#composiciones .contenedorCards .cardCancion .botones {
+.contenedorCards .cardCancion .botones {
   width: 40%;
 }
-#composiciones .contenedorCards .cardCancion .botones svg {
+.contenedorCards .cardCancion .botones svg {
   font-size: 25px;
   cursor: pointer;
   color: #303030;
   transition: 0.3s all ease-out;
 }
-#composiciones .contenedorCards .cardCancion .botones svg:hover {
+.contenedorCards .cardCancion .botones svg:hover {
   transform: translateY(-5px);
 }
-#composiciones .contenedorCards .cardCancion .botones svg:active {
+.contenedorCards .cardCancion .botones svg:active {
   transform: scale(1.1);
 }
 
 @media screen and (max-width: 1250px) {
-  #composiciones .contenedorCards {
+  .contenedorCards {
     width: 100%;
   }
 }
 @media screen and (max-width: 962px) {
   #composiciones .contenedorBienvenida {
+    height: auto;
     padding: 4em 2em 4em 2em;
   }
-  #composiciones .contenedorCards {
-    padding-left: 2em;
+  #composiciones .infoComposiciones {
+    padding: 4em 2em 4em 2em;
+  }
+  .contenedorCards {
+    padding: 0 2em 4em 2em;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  #composiciones .contenedorCards article {
+  .contenedorCards article {
     grid-column: span 1/span 1;
+  }
+  .contenedorCards article .card h2 {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 758px) {
+  .contenedorCards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .contenedorCards article {
+    grid-column: span 1/span 1;
+  }
+  .contenedorCards article .card h2 {
+    font-size: 18px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 682px) {
   #composiciones .contenedorBienvenida h1 {
     font-size: 3rem;
   }
+  #composiciones .contenedorBienvenida p {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 556px) {
-  #composiciones .contenedorCards {
+  #composiciones .infoComposiciones div h6 {
+    font-size: 1rem;
+    width: 75%;
+  }
+  #composiciones .infoComposiciones div p {
+    width: 100%;
+  }
+  .contenedorCards {
     display: flex;
     flex-direction: column;
   }

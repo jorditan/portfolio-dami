@@ -1,12 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import CardCancion from '../CardCancion'
-import atrapasueñosAudio from '../../assets/sound/atrapasuenos.mp3';
-import elHormigueroAudio from '../../assets/sound/elHormiguero.mp3'
-import impsAudio from '../../assets/sound/Imps.mp3';
-import anxietyAudio from '../../assets/sound/anxiety.mp3';
-import instrumentoVAudio from '../../assets/sound/instrumentoV.mp3';
 
 function Composiciones() {
      useEffect(() => {
@@ -15,44 +9,61 @@ function Composiciones() {
           })
      })
 
-     class Composicion {
-          constructor (titulo, motivo, materia, ancho, sound) {
-               this.titulo = titulo;
-               this.motivo = motivo;
-               this.materia = materia;
-               this.sound = sound;
-               this.ancho = ancho;
+
+     const informacion = [
+          {
+               titulo: 'Música electroacústica e incidental',
+               texto: 'En mi vida académica he compuseto piezas con distintos medios electro-acústicos y electrónicos, haciendo énfasis en crear ambiente. Me interesa especialmente la búsqueda de sonidos por fuera de lo común, expandiendo las posibilidades sonoras de cada instrumento más allá de lo usual.'
+          },
+          {
+               titulo: 'Música académica para instrumentos de cuerda, viento, percusión y voz',
+               texto: 'He creado piezas para cuarteto de cuerdas-tonales y atonales-, clarinete, arreglos corales y piezas únicamente para percusión.'
+          },
+          {
+               titulo: 'Saturnalia',
+               texto: 'Mi proyecto personal. Composiciones, arreglos y letra de mi autoría. Es un proyecto que vive en mí, buscando tocar fibras emocionales en quien escucha. Pienso a Saturnalia como una música que debe ser escuchada con atención y amor.'
+          },
+          {
+               titulo: 'Guipaño',
+               texto: 'Grupo de Folklore y fusión. Buscamos que la gente se ponga a bailar con los pañuelos al aire pero que también muevan la cabeza al escuchar un homenaje a Led Zeppelin -¡Todo en una misma canción!'
+          },
+          {
+               titulo: 'Orange High School',
+               texto: 'En esta escuela dirigí bandas adolescentes e hice arreglos de canciones de Chicago y La Cage Aux Folles. La presentación de los conciertos se hizo en teatros para más de 500 espectadores. '
           }
-     }
-
-     const atrapasueños = new Composicion ('Atrapasueños', 'Proyecto personal', 'Saturnalia', 'col-span-1', atrapasueñosAudio);
-     const imp = new Composicion ('IMPS', 'Universidad', 'Composición II', 'col-span-1', impsAudio);
-     const anxiety = new Composicion ('Anxiety', 'Universidad', 'Composición II', 'col-span-1', anxietyAudio  );
-     const elHormiguero = new Composicion ('El Hormiguero', 'Universidad', 'Composición II', 'col-span-2', elHormigueroAudio);
-     const instrumentoV = new Composicion ('InstrumentoV', 'Universidad', 'Instrumento-V', 'col-span-1', instrumentoVAudio);
-
-
-     const composiciones = [atrapasueños, imp, anxiety, elHormiguero, instrumentoV];
+     ]
 
      return (
           <section id='composiciones'>
-               <div className="contenedorBienvenida" data-aos="fade-right">
+               <div className="contenedorBienvenida h-[100vh]" data-aos="fade-right">
                     <h1 className='text-7xl font-bold text-[#303030]'>Mis composiciones</h1>
-                    <p className='pt-5 text-[#303030] text-sm w-full'>Trabajos realizados en proyectos personales, 
-                    canciones, trabajos universitarios, entre otros.</p>
+                    <p className='pt-5 text-[#303030] text-sm w-full'>A continuación podrán encontrar más información sobre mis composiciones y tendrán la posibilidad de escuchar algunas.</p>
+
+                    <p className='text-[#303030] text-md font-semibold w-3/4 pt-5'>Con ya más de doce años de experiencia en la industria musical, he explorado diversas facetas
+                         del arte sonoro y he trabajado en una amplia gama de proyectos musicales.</p>
+
+                    <p className='text-[#303030] text-md font-semibold w-3/4 pt-5'>Mi música abarca una variedad de géneros, desde Pop hasta música clásica y contemporánea,
+                         fusionando influencias para crear un sonido único.</p>
+
+                    <p className='text-[#303030] text-md font-semibold w-3/4 pt-5'>Mi enfoque para componer es principalmente ser introspectivo y sentir las emociones como
+                    realmente son. La música será simplemente un canal para llevarlas a la luz. Suelo comezar por
+                    improvisaciones que luego van adoptando una forma. Si me piden música por encargo, intento
+                    ser bien abierto a la hora de escuchar para así saber que busca cada persona.
+                    Por el momento, mi música está disponible en <a href="https://www.youtube.com/@saturnaliamusica" target='blank' className='enfasis cursor-pointer hover:text-[#414141]'>Youtube</a>. Todos los derechos reservados.</p>
                </div>
 
-               <div className="contenedorCards grid grid-cols-3 gap-12">
+               <article className="infoComposiciones flex column">
                     {
-                         composiciones.map((composicion, index) => {
+                         informacion.map((info, index) => {
                               return (
-                                   <article data-aos="fade-up" key={index} className={`${composicion.ancho}`}>
-                                        <CardCancion props={composicion}/>
-                                   </article>
+                                   <div key={index} className='flex column pt-6 pb-6' data-aos="fade-up">
+                                        <h6 className='text-[#303030] font-bold text-xl w-full'>{info.titulo}</h6>
+                                        <p className='text-[#303030] text-sm font-medium w-2/4 pt-4'>{info.texto}</p>
+                                   </div>
                               )
                          })
                     }
-               </div>
+               </article>
           </section>
      );
 }

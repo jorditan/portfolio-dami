@@ -7,12 +7,19 @@ import { Button } from "keep-react";
 function BotonReproduccion({ sound }) {
 
      const [sonando, setSonando] = useState(false);
-     const [audio, setAudio] = useState(new Audio(sound));
+     const [audio, setAudio] = useState(new Audio(sound.prop1));
+     const [identificacion, setIdentificacion] = useState(sound.prop2);
+     const [tarjetas, setTarjetas] = useState([]);
 
-     const audiosReproducidos = [];
 
      const handleEstado = () => {
           setSonando(!sonando);
+          setIdentificacion(sound.props2);
+          setTarjetas(
+               [
+                    ...tarjetas, sound.props2
+               ]
+          )
      }
 
      useEffect(() => {
@@ -35,15 +42,20 @@ function BotonReproduccion({ sound }) {
           }
 
           if (sonando) {
-               handlePlay()
-               audiosReproducidos.push(audio.src);
-               console.log(audiosReproducidos);
-          } 
-          else {
-               handlePause()
+               handlePlay();
           }
-     }, [sonando, audio])
+          else {
+               handlePause();
+          }
 
+     }, [sonando, audio, sound]
+     )
+
+
+     useEffect(() => {
+          console.log('cambiamos de tarjeta', identificacion);
+
+     }, [identificacion]);
 
 
      return (
