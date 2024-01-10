@@ -1,25 +1,18 @@
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Button } from "keep-react";
 
 
 function BotonReproduccion({ sound }) {
 
-     const [sonando, setSonando] = useState(false);
+     const [estaSonando, setEstaSonando] = useState(sound.prop3);
      const [audio, setAudio] = useState(new Audio(sound.prop1));
-     const [identificacion, setIdentificacion] = useState(sound.prop2);
-     const [tarjetas, setTarjetas] = useState([]);
 
+     const tarjetaActual = useRef({ ...sound, prop3: estaSonando });
 
      const handleEstado = () => {
-          setSonando(!sonando);
-          setIdentificacion(sound.props2);
-          setTarjetas(
-               [
-                    ...tarjetas, sound.props2
-               ]
-          )
+          setEstaSonando(!estaSonando);
      }
 
      useEffect(() => {
@@ -41,29 +34,30 @@ function BotonReproduccion({ sound }) {
                }
           }
 
-          if (sonando) {
+          if (estaSonando) {
                handlePlay();
+               tarjetaActual.current = {...sound, prop3: true}
+               console.log(tarjetaActual);
           }
           else {
                handlePause();
+               tarjetaActual.current ={...sound, prop3: false}
+               console.log(tarjetaActual);
           }
 
-     }, [sonando, audio, sound]
+     }, [estaSonando, audio, sound]
      )
 
-
      useEffect(() => {
-          console.log('cambiamos de tarjeta', identificacion);
-
-     }, [identificacion]);
-
+          console.log('cambiamos de tarjeta', tarjetaActual);
+     }, [tarjetaActual])
 
      return (
           <>
                <Button onClick={handleEstado} size="xs" type="gray" className="bg-[#303030] text-[#fafafa]" circle={true}>
                     <span >
                          {
-                              sonando ? <FaPause /> : <FaPlay />
+                              estaSonando ? <FaPause /> : <FaPlay />
                          }
                     </span>
                </Button>

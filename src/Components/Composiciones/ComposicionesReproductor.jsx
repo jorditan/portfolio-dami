@@ -16,23 +16,24 @@ function ComposicionesReproductor() {
      })
 
      class Composicion {
-          constructor(titulo, motivo, materia, ancho, soundProps1, soundProps2) {
+          constructor(titulo, motivo, materia, ancho, soundProps1, soundProps2, soundProps3) {
                this.titulo = titulo;
                this.motivo = motivo;
                this.materia = materia;
                this.sound = {
                     prop1: soundProps1,
-                    prop2: soundProps2
+                    prop2: soundProps2,
+                    prop3: soundProps3,
                };
                this.ancho = ancho;
           }
      }
 
-     const atrapasueños = new Composicion('Atrapasueños', 'Saturnalia', 'Proyecto personal', 'col-span-1', atrapasueñosAudio, 1);
-     const imp = new Composicion('IMPS', 'Universidad', 'Composición II', 'col-span-1', impsAudio);
-     const anxiety = new Composicion('Anxiety', 'Universidad', 'Composición II', 'col-span-1', anxietyAudio);
-     const elHormiguero = new Composicion('El Hormiguero', 'Universidad', 'Composición II', 'col-span-2', elHormigueroAudio);
-     const instrumentoV = new Composicion('InstrumentoV', 'Universidad', 'Instrumento-V', 'col-span-1', instrumentoVAudio);
+     const atrapasueños = new Composicion('Atrapasueños', 'Saturnalia', 'Proyecto personal', 'col-span-1', atrapasueñosAudio, 1, false);
+     const imp = new Composicion('IMPS', 'Universidad', 'Composición II', 'col-span-1', impsAudio, 2, false);
+     const anxiety = new Composicion('Anxiety', 'Universidad', 'Composición II', 'col-span-1', anxietyAudio, 3, false);
+     const elHormiguero = new Composicion('El Hormiguero', 'Universidad', 'Composición II', 'col-span-2', elHormigueroAudio, 4, false);
+     const instrumentoV = new Composicion('InstrumentoV', 'Universidad', 'Instrumento-V', 'col-span-1', instrumentoVAudio,5, false );
 
 
      const composiciones = [atrapasueños, imp, anxiety, elHormiguero, instrumentoV];

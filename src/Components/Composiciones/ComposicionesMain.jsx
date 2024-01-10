@@ -39,17 +39,23 @@ function Composiciones() {
                     <h1 className='text-7xl font-bold text-[#303030]'>Mis composiciones</h1>
                     <p className='pt-5 text-[#303030] text-sm w-full'>A continuación podrán encontrar más información sobre mis composiciones y tendrán la posibilidad de escuchar algunas.</p>
 
-                    <p className='text-[#303030] text-md font-semibold w-3/4 pt-5'>Con ya más de doce años de experiencia en la industria musical, he explorado diversas facetas
+                    <p className='text-[#303030] text-sm font-semibold w-full pt-5'>Con ya más de doce años de experiencia en la industria musical, he explorado diversas facetas
                          del arte sonoro y he trabajado en una amplia gama de proyectos musicales.</p>
 
-                    <p className='text-[#303030] text-md font-semibold w-3/4 pt-5'>Mi música abarca una variedad de géneros, desde Pop hasta música clásica y contemporánea,
+                    <p className='text-[#303030] text-sm font-semibold w-full pt-5'>Mi música abarca una variedad de géneros, desde Pop hasta música clásica y contemporánea,
                          fusionando influencias para crear un sonido único.</p>
 
-                    <p className='text-[#303030] text-md font-semibold w-3/4 pt-5'>Mi enfoque para componer es principalmente ser introspectivo y sentir las emociones como
-                    realmente son. La música será simplemente un canal para llevarlas a la luz. Suelo comezar por
-                    improvisaciones que luego van adoptando una forma. Si me piden música por encargo, intento
-                    ser bien abierto a la hora de escuchar para así saber que busca cada persona.
-                    Por el momento, mi música está disponible en <a href="https://www.youtube.com/@saturnaliamusica" target='blank' className='enfasis cursor-pointer hover:text-[#414141]'>Youtube</a>. Todos los derechos reservados.</p>
+                    <h2 className='text-3xl font-bold text-[#303030] pt-5'>Método de trabajo</h2>
+                    <p className='text-[#303030] text-sm font-semibold w-3/4 pt-2'>Mi enfoque para componer es principalmente ser introspectivo y sentir las emociones como
+                         realmente son. La música será simplemente un canal para llevarlas a la luz. Suelo comezar por
+                         improvisaciones que luego van adoptando una forma. Si me piden música por encargo, intento
+                         ser bien abierto a la hora de escuchar para así saber que busca cada persona.
+                         Por el momento, mi música está disponible en <a href="https://www.youtube.com/@saturnaliamusica" target='blank' className='enfasis cursor-pointer hover:text-[#414141]'>Youtube</a>. Todos los derechos reservados.</p>
+
+                    <h2 className='text-3xl font-bold text-[#303030] pt-5'>Proceso creativo</h2>
+                    <p className='text-[#303030] text-sm font-semibold w-3/4 pt-2'>Mis creaciones se inspiran en Rock Británico Psicodélico -Pink Floyd por sobre todas las cosas-
+                         Rock Argentino -Serú Girán mi principal inspiración-, música de videojuegos y música clásica,fusionando elementos para dar vida a composiciones auténtica.</p>
+
                </div>
 
                <article className="infoComposiciones flex column" data-aos="fade-up">
