@@ -62,7 +62,7 @@ function PresupuestosMain() {
                     </article>
 
 
-                    <article className="contenedorCards pt-8">
+                    <article className="contenedorPresupuesto pt-8">
                          <div className="container flex gap-20">
                               <CardPresupuesto dolar={data.compra} info={clasesIndividuales} /> 
                               <CardPresupuesto dolar={data.compra} info={clasesMensuales} /> 

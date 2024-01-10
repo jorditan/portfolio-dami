@@ -17,7 +17,7 @@
 .contenedorCards {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 0 6em 5em 6em;
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 .contenedorCards .cardCancion {

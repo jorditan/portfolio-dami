@@ -35,7 +35,7 @@ function Composiciones() {
 
      return (
           <section id='composiciones'>
-               <div className="contenedorBienvenida h-[100vh]" data-aos="fade-right">
+               <div className="contenedorBienvenida" data-aos="fade-right">
                     <h1 className='text-7xl font-bold text-[#303030]'>Mis composiciones</h1>
                     <p className='pt-5 text-[#303030] text-sm w-full'>A continuación podrán encontrar más información sobre mis composiciones y tendrán la posibilidad de escuchar algunas.</p>
 
@@ -52,7 +52,7 @@ function Composiciones() {
                     Por el momento, mi música está disponible en <a href="https://www.youtube.com/@saturnaliamusica" target='blank' className='enfasis cursor-pointer hover:text-[#414141]'>Youtube</a>. Todos los derechos reservados.</p>
                </div>
 
-               <article className="infoComposiciones flex column">
+               <article className="infoComposiciones flex column" data-aos="fade-up">
                     {
                          informacion.map((info, index) => {
                               return (

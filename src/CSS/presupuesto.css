@@ -7,7 +7,7 @@
   padding: 5em 6em 8em 6em;
   min-height: 100vh;
 }
-#infoClases .contenedorCards .card {
+#infoClases .contenedorPresupuesto .card {
   width: 15em;
   background-color: #E4E4E4;
   height: 18em;
@@ -19,8 +19,8 @@
   }
 }
 @media screen and (max-width: 798px) {
-  #infoClases .contenedorCards .container {
-    align-items: center;
+  #infoClases .contenedorPresupuesto .container {
+    align-items: flex-start;
     flex-direction: column;
   }
 }
