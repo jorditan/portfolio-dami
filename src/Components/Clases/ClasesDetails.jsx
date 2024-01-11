@@ -1,22 +1,28 @@
 import Motivo from '../Motivo'
+import FotoDamiPortfolio from '../../assets/img/FotoDamiPortfolio.webp'
+import FotoDamiCard from '../../assets/img/FotoDamiCard.webp'
+import FotoDamiPiano from '../../assets/img/FotoDamiPiano2.webp'
+import FotoDamiGuitarra from '../../assets/img/FotoDamiGuitarra.webp'
+
+
 function ClasesDetails() {
      
      const motivos = [
           {
                texto: 'Porque priorizamos tus gustos musicales y tenemos en cuenta la razón por la que empezaste. 🎵',
-               img: 'src/assets/img/FotoDamiPortfolio.webp',
+               img: FotoDamiPortfolio
           },
           {
                texto: 'Porque respetamos tiempos y tus necesidades. Cada cual aprende a su ritmo. ⏳',
-               img: 'src/assets/img/FotoDamiCard.webp',
+               img: FotoDamiCard,
           },
           {
                texto: 'No nos basamos en un método antiguo donde no disfrutas lo que haces. La idea es que aprendas y te diviertas.',
-               img: 'src/assets/img/FotoDamiPiano2.webp',
+               img: FotoDamiPiano,
           },
           {
                texto: 'Podés elegir la modalidad que te resulte más cómoda. ¡No dejes de hacer tus cosas y aprovechá esta ventaja!',
-               img: 'src/assets/img/FotoDamiGuitarra.webp',
+               img: FotoDamiGuitarra,
           },
      ]
 
