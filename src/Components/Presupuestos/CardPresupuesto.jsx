@@ -10,6 +10,8 @@ import Skeleton from "react-loading-skeleton";
 export default function CardComponent({ dolar, info }) {
 
      const precioClase = Math.round(dolar * info.precio);
+     const descuento = precioClase*(15/100);
+     const precioNuevo = precioClase - descuento;
      const [preferenceId, setPreferenceId] = useState(null);
 
      initMercadoPago('APP_USR-b973685f-30c9-4ba9-a891-18cf752b430f');
@@ -41,11 +43,20 @@ export default function CardComponent({ dolar, info }) {
           <Card className="max-w-xs p-6">
                <Card.Container>
                     <Card.Container>
-                         <Card.Title className="text-body-2 font-medium text-primary-500">
+                         <Card.Title className="text-2xl font-bold text-primary-500">
                               {info.clase}
                          </Card.Title>
                          <Card.Title className="flex items-center my-3">
-                              <span className="text-heading-4 font-bold text-metal-800">${precioClase || <Skeleton duration={5} baseColor="#202020" highlightColor="#444" />}</span>
+                         <span className="text-sm text-metal-400">Antes: ${precioClase || <Skeleton duration={5} baseColor="#202020" highlightColor="#444" />}</span>
+                              <span className="ml-1 text-body-4 text-sm text-metal-400">
+                                   ARS c/u 
+                              </span>
+                         </Card.Title>
+                         <Card.Title className="flex items-end my-3">
+                         <span className="text-heading-8 font-bold text-metal-800">¡Ahora!</span> <span className="font-bold text-[#C70039] pl-2">15% Off</span>
+                         </Card.Title>
+                         <Card.Title className="flex items-center my-3">
+                         <span className="text-heading-4 font-bold text-metal-800">${precioNuevo || <Skeleton duration={5} baseColor="#202020" highlightColor="#444" />}</span>
                               <span className="ml-1 text-body-4 font-medium text-metal-400">
                                    ARS c/u
                               </span>

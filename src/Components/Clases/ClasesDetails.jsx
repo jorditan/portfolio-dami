@@ -17,11 +17,11 @@ function ClasesDetails() {
                img: FotoDamiCard,
           },
           {
-               texto: 'No nos basamos en un método antiguo donde no disfrutas lo que haces. La idea es que aprendas y te diviertas.',
+               texto: 'No nos basamos en un método antiguo donde no disfrutas lo que haces. La idea es que aprendas y te diviertas. 😄',
                img: FotoDamiPiano,
           },
           {
-               texto: 'Podés elegir la modalidad que te resulte más cómoda. ¡No dejes de hacer tus cosas y aprovechá esta ventaja!',
+               texto: 'Podés elegir la modalidad que te resulte más cómoda. ¡No dejes de hacer tus cosas y aprovechá esta ventaja! 🎸',
                img: FotoDamiGuitarra,
           },
      ]
