@@ -29,7 +29,7 @@ function Footer() {
                                         <a href="" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]">Métodos de pago</a>
                                    </li>
                                    <li className="dudasItem">
-                                        <a href="" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]">Dudas frecuentes</a>
+                                        <Link to="/dudasFrecuentes" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]">Dudas frecuentes</Link>
                                    </li>
                               </ul>
                          </div>

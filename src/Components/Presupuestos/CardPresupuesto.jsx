@@ -20,7 +20,7 @@ export default function CardComponent({ dolar, info }) {
           try {
                const response = await axios.post("http://localhost:3000/create_preference", {
                     title: info.clase,
-                    price: precioClase,
+                    price: precioNuevo,
                     quantity: 1,
                     currency_id: 'ARS'
                });

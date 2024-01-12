@@ -214,7 +214,7 @@ header {
   display: block;
   white-space: nowrap;
   border-right: 4px;
-  width: 21ch;
+  width: 22ch;
   animation: escribiendo 2s steps(20), puntero 0.5s infinite step-end alternate;
   overflow: hidden;
 }
@@ -280,6 +280,16 @@ header {
   #titulo {
     font-size: 3rem;
     width: auto;
+  }
+}
+@media screen and (max-width: 724px) {
+  .contenedorTitulo {
+    align-items: flex-start;
+    padding-left: 2em;
+    gap: 10px;
+  }
+  .contenedorTitulo #titulo {
+    width: 100%;
   }
 }
 @media screen and (max-width: 646px) {
@@ -578,7 +588,8 @@ header {
   #footer .filaSuperior .contenedor {
     padding-left: 2em;
   }
-  #footer .filaInferior .contenedorAuditoria, #footer .filaInferior .contenedorMail {
+  #footer .filaInferior .contenedorAuditoria,
+  #footer .filaInferior .contenedorMail {
     padding-left: 2em;
     width: 50%;
     justify-content: center;

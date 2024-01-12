@@ -9,6 +9,7 @@ import MiCarrera from './Screens/MiCarrera'
 import ScrollTop from './Components/Scroll/ScrollToTop'
 import store from './Context/store'
 import { Provider } from 'react-redux'
+import Faqs from './Screens/Faqs'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/micarrera' element={<MiCarrera />} />
         <Route path='/infoClases' element={<Clases />} />
         <Route path='/presupuestoClases' element={<Presupuestos />} />
+        <Route path='/dudasFrecuentes' element={<Faqs />} />
       </Routes>
       <Footer />
     </Provider>
