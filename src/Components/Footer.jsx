@@ -2,7 +2,8 @@ import { IoMdMail } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import LogoDami from '../assets/img/LogoDami.webp'
+import LogoDami from '../assets/img/LogoDami.webp';
+import { Link } from "react-router-dom";
 
 function Footer() {
      return (
@@ -21,7 +22,7 @@ function Footer() {
                               <h3 className="text-md text-[#f2f0fc] font-bold">Más información</h3>
                               <ul className="dudasList flex column gap-3 h-full justify-center">
                                    <li className="dudasList">
-                                        <a href="" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 text-center hover:text-[#c7c7c7]">Mi experiencia</a>
+                                        <Link to="/micarrera" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 text-center hover:text-[#c7c7c7]">Mi experiencia</Link>
                                    </li>
 
                                    <li className="dudasItem">

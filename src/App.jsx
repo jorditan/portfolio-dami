@@ -7,22 +7,24 @@ import Clases from './Screens/Clases'
 import Presupuestos from './Screens/Presupuestos'
 import MiCarrera from './Screens/MiCarrera'
 import ScrollTop from './Components/Scroll/ScrollToTop'
+import store from './Context/store'
+import { Provider } from 'react-redux'
 
 function App() {
 
   return (
-    <>
+    <Provider store={store}>
       <Navbar />
-      <ScrollTop/>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/composiciones' element={<Composiciones />} />
-          <Route path='/micarrera' element={<MiCarrera />} />
-          <Route path='/infoClases' element={<Clases />} />
-          <Route path='/presupuestoClases' element={<Presupuestos />} />
-        </Routes>
+      <ScrollTop />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/composiciones' element={<Composiciones />} />
+        <Route path='/micarrera' element={<MiCarrera />} />
+        <Route path='/infoClases' element={<Clases />} />
+        <Route path='/presupuestoClases' element={<Presupuestos />} />
+      </Routes>
       <Footer />
-    </>
+    </Provider>
   )
 }
 

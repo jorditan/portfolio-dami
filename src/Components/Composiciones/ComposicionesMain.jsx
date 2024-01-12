@@ -33,6 +33,7 @@ function Composiciones() {
           }
      ]
 
+
      return (
           <section id='composiciones'>
                <div className="contenedorBienvenida" data-aos="fade-right">
@@ -58,7 +59,7 @@ function Composiciones() {
 
                </div>
 
-               <article className="infoComposiciones flex column" data-aos="fade-up">
+               <article className={`infoComposiciones flex column`} data-aos="fade-up">
                     {
                          informacion.map((info, index) => {
                               return (

@@ -11,7 +11,6 @@ function InfoMain({ mostrarAlerta }) {
                     <FaInfo className='botonInfo' />
                     <div className="switchs flex">
                          <BotonSwitch />
-                         <BotonSwitch />
                     </div>
                     <Redes />
                     <BotonCompartir mostrarAlerta={mostrarAlerta} />

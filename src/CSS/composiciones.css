@@ -20,30 +20,28 @@
   width: 100%;
   height: auto;
 }
-.contenedorCards .cardCancion {
-  height: 15em;
-  width: auto;
-}
-.contenedorCards .cardCancion .info {
+
+.info {
   width: 60%;
   justify-content: center;
 }
-.contenedorCards .cardCancion .info h3 {
+.info h3 {
   font-size: 2em;
 }
-.contenedorCards .cardCancion .botones {
+
+.botones {
   width: 40%;
 }
-.contenedorCards .cardCancion .botones svg {
+.botones svg {
   font-size: 25px;
   cursor: pointer;
   color: #303030;
   transition: 0.3s all ease-out;
 }
-.contenedorCards .cardCancion .botones svg:hover {
+.botones svg:hover {
   transform: translateY(-5px);
 }
-.contenedorCards .cardCancion .botones svg:active {
+.botones svg:active {
   transform: scale(1.1);
 }
 
