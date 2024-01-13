@@ -110,7 +110,7 @@ i {
 
 .enfasis {
   color: var(--enfasis);
-  font-weight: bolder;
+  font-weight: 800;
 }
 
 .sombra {

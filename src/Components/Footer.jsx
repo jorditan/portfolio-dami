@@ -11,7 +11,7 @@ function Footer() {
                <div className="filaSuperior flex pl-24">
                     <section className="contenedorInfoFooter logo">
                          <div className="contenedorImg pt-4">
-                              <img src={LogoDami} alt="Logo tus clases de música personalizadas" />
+                              <img src={LogoDami} width={"100px"} height={"20px"} alt="Logo tus clases de música personalizadas" />
                          </div>
 
                          <p className="pt-5 text-sm text-[#fafafa]">Tus clases de música personalizadas</p>
