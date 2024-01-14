@@ -30,12 +30,14 @@ header {
   align-items: center;
 }
 .navBar .navList .navItem .navLink {
+  color: var(--color-secundario);
   cursor: pointer;
   margin: 0 6px 0 10px;
   font-size: 16px;
   transition: 0.5s all ease-in-out;
 }
 .navBar .navList .navItem .iconNav {
+  color: var(--color-secundario);
   font-size: 16px;
   transition: 0.4s all ease-in-out;
 }
@@ -551,13 +553,14 @@ header {
   height: 70%;
 }
 #footer .filaSuperior .logo .contenedorImg {
-  width: 100%;
+  width: 20%;
   height: 50%;
 }
 #footer .filaSuperior .logo .contenedorImg img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #footer .filaInferior {
   height: 30%;
@@ -577,14 +580,8 @@ header {
     width: 80%;
   }
   #footer .filaSuperior .logo .contenedorImg {
-    width: 100%;
+    width: 20%;
     height: 30%;
-  }
-  #footer .filaSuperior .logo .contenedorImg img {
-    height: 50px;
-    width: 63px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   #footer .filaSuperior .contenedor {
     padding-left: 2em;
@@ -602,10 +599,11 @@ header {
     flex-direction: column;
     gap: 30px;
   }
-  #footer .filaInferior .contenedorAuditoria {
+  #footer .filaInferior .contenedorAuditoria, #footer .filaInferior .contenedorMail {
     width: 100%;
+    padding-left: 0;
   }
-  #footer .filaInferior .contenedorAuditoria p {
+  #footer .filaInferior .contenedorAuditoria p, #footer .filaInferior .contenedorMail p {
     text-align: center;
   }
   #footer .filaInferior .contenedorMail {

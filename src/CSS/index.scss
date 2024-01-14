@@ -32,6 +32,7 @@ header {
                align-items: center;
 
                .navLink {
+                    color: var(--color-secundario);
                     cursor: pointer;
                     margin: 0 6px 0 10px;
                     font-size: 16px;
@@ -39,6 +40,7 @@ header {
                }
 
                .iconNav {
+                    color: var(--color-secundario);
                     font-size: 16px;
                     transition: .4s all ease-in-out;
                }
@@ -691,12 +693,13 @@ header {
 
           .logo {
                .contenedorImg {
-                    width: 100%;
+                    width: 20%;
                     height: 50%;
 
                     img {
                          height: 100%;
-                         object-fit: cover;
+                         width: 100%;
+                         object-fit: contain;
                     }
                }
           }
@@ -725,14 +728,8 @@ header {
                     }
 
                     .contenedorImg {
-                         width: 100%;
+                         width: 20%;
                          height: 30%;
-
-                         img {
-                              height: 50px;
-                              width: 63px;
-                              object-fit: cover;
-                         }
                     }
                }
 
@@ -760,8 +757,9 @@ header {
                flex-direction: column;
                gap: 30px;
 
-               .contenedorAuditoria {
+               .contenedorAuditoria, .contenedorMail {
                     width: 100%;
+                    padding-left: 0;
 
                     p {
                          text-align: center;

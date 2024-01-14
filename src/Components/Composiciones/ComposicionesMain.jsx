@@ -24,7 +24,7 @@ function Composiciones() {
                texto: 'Mi proyecto personal. Composiciones, arreglos y letra de mi autoría. Es un proyecto que vive en mí, buscando tocar fibras emocionales en quien escucha. Pienso a Saturnalia como una música que debe ser escuchada con atención y amor.'
           },
           {
-               titulo: 'Guipaño',
+               titulo: 'Guiñapo',
                texto: 'Grupo de Folklore y fusión. Buscamos que la gente se ponga a bailar con los pañuelos al aire pero que también muevan la cabeza al escuchar un homenaje a Led Zeppelin -¡Todo en una misma canción!'
           },
           {

@@ -82,7 +82,7 @@ i {
 .navBarNegra .navList .navItem .navLink {
   color: var(--color-primario);
 }
-.navBarNegra .navList .navItem .navIcon {
+.navBarNegra .navList .navItem .iconNav {
   color: var(--color-primario);
 }
 

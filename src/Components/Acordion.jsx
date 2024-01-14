@@ -1,13 +1,13 @@
-function Acordeon() {
+function Acordeon({texto, pregunta}) {
     return (
         <>
-            <article className="collapse collapse-arrow bg-[#fafafa] w-2/4">
+            <article className="collapse collapse-arrow bg-[#fafafa] w-full">
                 <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
-                    <h5 className="text-[#303030] font-bold text-sm">¿Hace falta tener guitarra?</h5>
+                    <h5 className="text-[#303030] font-bold text-sm">{pregunta}</h5>
                 </div>
                 <div className="collapse-content">
-                    <p className="text-[#303030] text-xs">No, no hace falta tener guitarra para empezar.</p>
+                    <p className="text-[#303030] text-xs">{texto}</p>
                 </div>
             </article>
         </>

@@ -40,7 +40,7 @@ function CardCancion({ cancion, titulo, motivo, materia, ancho, id, cancionActua
 
 
      return (
-          <article className={`card bg-[#f1f1f1] h-[20em] w-full column hover:translate-y-[-10px] cursor-pointer ease-in duration-200 ${ancho}`}>
+          <article className={`card bg-[#f1f1f1] h-[20em] w-full column hover:translate-y-[-10px] ease-in duration-200 ${ancho}`}>
                <figure className='rounded-t-2xl'><img src={ImagenCard} alt="Guitarra" /></figure>
                <div className="card-body h-3/4">
                     <h2 className="card-title font-bold text-[#303030] text-2xl">{titulo}</h2>
