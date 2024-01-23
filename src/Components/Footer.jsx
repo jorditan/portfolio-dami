@@ -22,11 +22,11 @@ function Footer() {
                               <h3 className="text-md text-[#f2f0fc] font-bold">Más información</h3>
                               <ul className="dudasList flex column gap-3 h-full justify-center">
                                    <li className="dudasList">
-                                        <Link to="/micarrera" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 text-center hover:text-[#c7c7c7]">Mi experiencia</Link>
+                                        <Link to="/micarrera" className="redesLink  flex items-center text-sm text-[#fafafa] gap-2 text-center hover:text-[#c7c7c7]">Mi experiencia</Link>
                                    </li>
 
                                    <li className="dudasItem">
-                                        <a href="" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]">Métodos de pago</a>
+                                        <Link to="/metodosDePago" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]">Métodos de pago</Link>
                                    </li>
                                    <li className="dudasItem">
                                         <Link to="/dudasFrecuentes" className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]">Dudas frecuentes</Link>
@@ -39,15 +39,15 @@ function Footer() {
                          <div className="contenedorRedesList flex column pt-2 h-full">
                               <h3 className="text-md text-[#f2f0fc] font-bold">Redes sociales</h3>
                               <ul className="redesList flex column gap-3 h-full justify-center">
-                                   <li className="redesItemf">
-                                        <a className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]" href="https://www.facebook.com/damianjmusica" target="blank"><FaFacebook/>Facebook</a>
+                                   <li className="redesItem">
+                                        <a className="redesLink flex items-center text-sm  text-[#fafafa] gap-2 hover:text-[#c7c7c7]" href="https://www.facebook.com/damianjmusica" target="blank"><FaFacebook/>Facebook</a>
                                    </li>
 
                                    <li className="redesItem">
-                                        <a className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]" href="https://www.instagram.com/damianjmusica/" target="blank"><FaInstagram/>Instagram</a>
+                                        <a className="redesLink flex items-center text-sm  text-[#fafafa] gap-2 hover:text-[#c7c7c7]" href="https://www.instagram.com/damianjmusica/" target="blank"><FaInstagram/>Instagram</a>
                                    </li>
                                    <li className="redesItem">
-                                        <a className="redesLink flex items-center text-sm text-[#fafafa] gap-2 hover:text-[#c7c7c7]" href="https://www.linkedin.com/in/damiannahueljordan/" target="blank"><FaLinkedin/>linkedIn</a>
+                                        <a className="redesLink flex items-center text-sm  text-[#fafafa] gap-2 hover:text-[#c7c7c7]" href="https://www.linkedin.com/in/damiannahueljordan/" target="blank"><FaLinkedin/>linkedIn</a>
                                    </li>
                               </ul>
                          </div>
@@ -61,7 +61,7 @@ function Footer() {
 
                     <div className="contenedorMail w-1/4 flex justify-left items-center">
                          <IoMdMail  id="iconMail"/>
-                         <a href="https://mail.google.com/" className="text-xs text-[#afaeb4] hover:text-[#c7c7c7] pl-2">damiannjordan@gmail.com</a>
+                         <a href="https://mail.google.com/" className="text-xs  text-[#afaeb4] hover:text-[#c7c7c7] pl-2">damiannjordan@gmail.com</a>
                     </div>
 
                </div>

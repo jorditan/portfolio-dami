@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CardPresupuesto from './CardPresupuesto.jsx'
+import { Link } from "react-router-dom";
 
 function PresupuestosMain() {
 
@@ -44,21 +45,18 @@ function PresupuestosMain() {
                               <h1 className="text-5xl text-[#303030] font-bold">¡Encontrá el presupuesto de las clases para este 2024!</h1>
 
                               <p className="pt-6 text-sm text-[#303030] w-3/4">
-                                   ¿Querés saber los precios de cada clase o del mes completo? Estás en el lugar correcto, mirá los precios <span className="enfasis">completamente actualizados.</span>
+                                   ¿Querés saber los precios de cada clase o del mes completo? Estás en el lugar correcto, mirá los precios <span className="font-bold">completamente actualizados.</span>
                               </p>
 
                               <p className="pt-6 text-sm text-[#303030] w-3/4">
                                    Nota: el abono de las clases puede realizarse con MercadoPago, transferencia bancaria y tarjetas de débito.
                               </p>
-                         </div>
 
-                         <div className="contenedorInfoPagos pt-12">
-                              <h2 className="text-4xl text-[#303030] font-bold">Elegí el método de pago que prefieras.</h2>
-
-                              <p className="pt-6 text-lg text-[#303030] w-2/4 text-semibold">
-                                   Aprovechá y aboná las clases <span className="enfasis">individuales</span> y <span className="enfasis">mensuales</span>. Cada una de ellas tiene sus propias características y ventajas. Desliza hacia abajo para ver los precios.
+                              <p className="text-sm pt-6">
+                                   Chequeá todos los <Link to={"/metodosDePago"} className="font-bold text-[#303030] underline hover:text-[#6a6a6a]">métodos de pago disponibles.</Link>
                               </p>
                          </div>
+
                     </article>
 
 

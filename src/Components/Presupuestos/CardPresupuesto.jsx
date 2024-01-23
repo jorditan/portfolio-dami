@@ -58,7 +58,7 @@ export default function CardComponent({ dolar, info }) {
                          <Card.Title className="flex items-center my-3">
                          <span className="text-heading-4 font-bold text-metal-800">${precioNuevo || <Skeleton duration={5} baseColor="#202020" highlightColor="#444" />}</span>
                               <span className="ml-1 text-body-4 font-medium text-metal-400">
-                                   ARS c/u
+                                   ARS
                               </span>
                          </Card.Title>
                          <Card.Description className="text-body-4 text-metal-700">

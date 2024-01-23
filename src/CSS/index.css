@@ -71,9 +71,6 @@ header {
   font-size: 15px;
   transition: 0.3s all ease-in-out;
 }
-.navBar .navList .dropDownMenu .dropDown li .navLink:hover {
-  color: #cacaca;
-}
 
 @media screen and (max-width: 903px) {
   .navBar {

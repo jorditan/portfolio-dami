@@ -10,6 +10,7 @@ import ScrollTop from './Components/Scroll/ScrollToTop'
 import store from './Context/store'
 import { Provider } from 'react-redux'
 import Faqs from './Screens/Faqs'
+import MetodosDePago from './Screens/Pago'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/infoClases' element={<Clases />} />
         <Route path='/presupuestoClases' element={<Presupuestos />} />
         <Route path='/dudasFrecuentes' element={<Faqs />} />
+        <Route path='/metodosDePago' element={<MetodosDePago />} />
       </Routes>
       <Footer />
     </Provider>

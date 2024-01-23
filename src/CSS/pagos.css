@@ -1,0 +1,19 @@
+@import url("utils.css");
+#pagos {
+  min-height: 100vh;
+  padding: 5em 6em 8em 6em;
+}
+
+@media screen and (max-width: 970px) {
+  #pagos {
+    padding: 4em 2em 4em 2em;
+  }
+  #pagos h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  #pagos h1 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=pagos.css.map */

@@ -20,7 +20,7 @@ function ComposicionesReproductor() {
      const { cancionActual, estaSonando } = useSelector((state) => state.reproduccion);
 
      class Composicion {
-          constructor(titulo, motivo, materia, ancho, cancion, id) {
+          constructor(titulo, motivo, materia, ancho, cancion, id, img) {
                this.titulo = titulo;
                this.motivo = motivo;
                this.materia = materia;
@@ -28,6 +28,7 @@ function ComposicionesReproductor() {
                this.cancion = cancion;
                this.id = id;
                this.estaSonando = false
+               this.img = img
           }
      }
 

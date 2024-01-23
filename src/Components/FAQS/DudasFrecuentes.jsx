@@ -61,7 +61,7 @@ function DudasFrecuentes() {
 
             <p className='text-[#303030] text-sm pt-5 w-3/4'>En esta sección vas a poder informarte acerca de las dudas más frecuentes que suelen tener los alumnos o las personas interesadas en tomar clases de guitarra y/o piano.</p>
 
-            <div className="contenedorAcordeones grid grid-cols-3 w-3/4 gap-5 py-6">
+            <div className="contenedorAcordeones flex column w-2/4 justify-center gap-5 py-12">
                 {
                     dudas.map((duda, index) => {
                         return(
