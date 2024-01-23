@@ -13,7 +13,7 @@ export const ModalComponent = ({info}) => {
 
      return (
           <>
-               <Button onClick={onClickOne} type='secondary' size={'xl'} className="text-[#fafafa] bg-[#303030] hover:text-[#303030] hover:border-solid hover:border-2 hover:bg-transparent hover:border-[#303030]">{info.preview}</Button>
+               <Button onClick={onClickOne} type='secondary' size={'xl'} className="text-[#fafafa] bg-[#303030] hover:text-[#303030] hover:border-solid hover:border-2 hover:bg-transparent hover:border-[#303030] dark:text-[#303030] dark:bg-[#fafafa] dark:hover:border-[#fafafa] dark:hover:text-[#fafafa]">{info.preview}</Button>
                <Modal
                     icon={<PiChalkboardTeacherFill size={28} color="#1d1d1d" />}
                     size="md"

@@ -47,12 +47,12 @@ function TimeLapse() {
                     {lapse.map((lap, index) => (
                          <li key={index} data-aos="fade-up">
                               <div className="timeline-middle ">
-                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#303030" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="303030" /></svg>
+                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#303030" className="h-5 w-5 dark:fill-[#fafafa]"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="303030" /></svg>
                               </div>
                               <div className="timeline-start md:text-end mb-10 
                               odd:timeline-end container">
-                                   <time className="text-5xl text-[#303030] font-bold">{lap.año}</time>
-                                   <p className="text-[#303030] font-medium text-sm">
+                                   <time className="text-5xl text-[#303030] font-bold dark:text-[#fafafa]">{lap.año}</time>
+                                   <p className="text-[#303030] font-medium text-sm dark:text-[#fafafa]">
                                         {lap.texto}
                                    </p>
                               </div>

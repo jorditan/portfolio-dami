@@ -12,6 +12,7 @@ function NavBar() {
      const [pulsado, setPulsado] = useState(false);
      const [menuNav, setMenuNav] = useState('navList');
      const [colorNav, setColorNav] = useState('transparent');
+     const [opacidad, setOpacidad] = useState('');
 
      const mostrarMenu = () => {
           setActivado(!activado);
@@ -20,6 +21,7 @@ function NavBar() {
                setMenuNav('navList visible');
                setColorNav('navBarNegra');
                setActivado(true);
+               setOpacidad('opacidadMaxima')
           }
           else {
                cerrarMenu()
@@ -29,6 +31,7 @@ function NavBar() {
      const cerrarMenu = () => {
           setMenuNav('navList');
           setColorNav('transparent')
+          setOpacidad('');
           setActivado(false);
           setPulsado(false);
      }
@@ -47,18 +50,18 @@ function NavBar() {
      return (
           <>
                <header>
-                    <nav className={`navBar ${colorNav}`}>
+                    <nav className={`navBar ${colorNav} ${opacidad}`}>
                          <ul className={menuNav}>
-                              <li className="navItem"><IoHome className="iconNav" />
-                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/" className="navLink">Inicio</Link>
+                              <li className="navItem text text-[#303030]"><IoHome className="iconNav text-[#303030] dark:text-[#fafafa]" />
+                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/" className="navLink text-[#303030] dark:text-[#fafafa]">Inicio</Link>
                               </li>
 
-                              <li className="navItem"><LuListMusic className="iconNav" />
-                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/composiciones" className="navLink" >Composiciones</Link>
+                              <li className="navItem text-[#303030]"><LuListMusic className="iconNav text-[#303030] dark:text-[#fafafa]" />
+                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/composiciones" className="navLink text-[#303030] dark:text-[#fafafa]" >Composiciones</Link>
                               </li>
 
-                              <li className="navItem"><GoInfo className="iconNav" />
-                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/micarrera" className="navLink">Mi carrera</Link>
+                              <li className="navItem text-[#303030] dark:text-[#fafafa]"><GoInfo className="iconNav" />
+                                   <Link preventScrollReset={true} onClick={cerrarMenu} to="/micarrera" className="navLink text-[#303030] dark:text-[#fafafa]">Mi carrera</Link>
                               </li>
 
                               <DropDown
@@ -67,7 +70,6 @@ function NavBar() {
                                    cerrarMenu={cerrarMenu}
                                    colorNav={colorNav}
                                    pulsado={pulsado}
-
                               />
                          </ul>
 

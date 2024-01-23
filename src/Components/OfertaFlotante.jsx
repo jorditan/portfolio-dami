@@ -22,7 +22,7 @@ function OfertaFlotante() {
                          </button>
                     </Popover.Container>
                     <Popover.Action>
-                         <Button size="xs" className="bg-[#303030] text-[#fafafa]">¡Oferta disponible!</Button>
+                         <Button size="xs" className="bg-[#303030] dark:bg-[#fafafa] dark:text-[#303030] text-[#fafafa]">¡Oferta disponible!</Button>
                     </Popover.Action>
                </Popover>
           </div>

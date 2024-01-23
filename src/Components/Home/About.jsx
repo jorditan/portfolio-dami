@@ -16,14 +16,14 @@ function About() {
           <section id="about">
                <div className="contenedorInfoAbout flex">
                     <div className="presentacion flex column" data-aos="fade-right">
-                         <h2 className="text-6xl font-bold text-[#303030]">Sobre mi</h2>
+                         <h2 className="text-6xl font-bold text-[#303030] dark:text-[#fafafa]">Sobre mi</h2>
 
-                         <p className="font-semibold text-[#303030]">
+                         <p className="font-semibold text-[#303030] dark:text-[#fafafa]">
                               ¡Hola a todos! 👋 Bienvenidos a mi portfolio. Soy profesor de música, compositor, productor y arreglista.
                          </p>
-                         <p className="font-semibold text-[#303030]">
+                         <p className="font-semibold text-[#303030] dark:text-[#fafafa]">
                               Tengo 28 años y estoy estudiando la licenciatura en Música en la UNA (Universida Nacional de las Artes).
-                              Tengo experiencia dando clases a <span className='enfasis'>pequeños y grandes
+                              Tengo experiencia dando clases a <span className='font-bold'>pequeños y grandes
                                    grupos de alumnos.</span> Se enseñar con diferentes métodos
                               y siempre priorizo el aprendizaje y la comodidad de mis
                               estudiantes.

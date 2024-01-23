@@ -6,6 +6,7 @@ import CardPresentacion from '../CardPresentacion';
 import InfoMain from './InfoMain';
 import Alerta from '../Alert';
 import OfertaFlotante from '../OfertaFlotante';
+import BotonSwitch from '../BotonSwitch';
 
 function Main() {
      useEffect(() => {
@@ -28,13 +29,14 @@ function Main() {
           <>
                <section id="inicio" className='pt-8'>
                     <div className="contenedorTitulo flex column">
-                         <h1 id='titulo' className="text-7xl font-bold text-[#303030] text-center">Damián Nahuel Jordán</h1>
-                         <p data-aos="fade-up" className="text-1xl text-[#505050] text-center">Profesor de guitarra, piano y teoría musical. Compositor, arreglista y transcriptor.</p>
+                         <h1 id='titulo' className="text-7xl font-bold text-[#303030] text-center dark:text-[#fafafa]">Damián Nahuel Jordán</h1>
+                         <p data-aos="fade-up" className="text-1xl text-[#505050] text-center dark:text-[#fafafa]">Profesor de guitarra, piano y teoría musical. Compositor, arreglista y transcriptor.</p>
                     </div>
                     <CardPresentacion />
                     <InfoMain mostrarAlerta={mostrarAlerta} />
                     <Alerta display={display} />
                     <OfertaFlotante/>
+                    <BotonSwitch />
                </section>
           </>
      );

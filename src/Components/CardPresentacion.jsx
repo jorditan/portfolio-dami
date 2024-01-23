@@ -11,13 +11,13 @@ function CardPresentacion() {
      }, [])
      return (
           <div className="contenedorReproductor flex column" data-aos="fade-up">
-               <div className="contenedorImagen">
+               <div className="contenedorImagen bg-[#303030] dark:bg-[#fafafa]">
                     <img src={FotoDamiMain} alt="Damián Nahuel Jordán" />
                </div>
 
                <div className="contenedorTextoRep flex column">
-                    <p className='text-lg  font-semibold text-[#303030] '>¡Bienvenidos a mi portfolio!</p>
-                    <p className='text-lg font-semibold text-[#303030]'>¿Quéres conocerme más? Deslizá hacia abajo.</p>
+                    <p className='text-lg  font-semibold text-[#303030] dark:text-[#fafafa] '>¡Bienvenidos a mi portfolio!</p>
+                    <p className='text-lg font-semibold text-[#303030] dark:text-[#fafafa]'>¿Quéres conocerme más? Deslizá hacia abajo.</p>
                </div>
           </div>
      );

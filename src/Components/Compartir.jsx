@@ -12,7 +12,7 @@ function BotonCompartir({ mostrarAlerta }) {
 
      return (
           <div className="contenedorModal flex">
-               <Button type='slate' className="text-white my-2 hover:text-[#c7c7c7] hover:scale-105" onClick={onClick} size="sm">Compartí el portfolio</Button>
+               <Button type='slate' size="sm" className="text-[#fafafa] text-xs my-2 hover:text-[#c7c7c7] hover:scale-105  dark:hover:text-[#303030] dark:text-[#303030]" onClick={onClick} >Compartí el portfolio</Button>
                <Modal
                     icon={<FaCreativeCommonsShare size={28} color="#303030" />}
                     size="md"

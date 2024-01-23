@@ -36,18 +36,18 @@ function DropDown({activado, pulsado, colorNav, menuNav, cerrarMenu}) {
      return (
           <>
                <div className="dropDownMenu">
-                    <div className="navItem" onClick={mostrarDrop}>
+                    <div className="navItem text-[#303030] dark:text-[#fafafa]" onClick={mostrarDrop}>
                          <FaChalkboardTeacher className="iconNav" />
                          <span className="navLink">Clases</span>
                     </div>
 
-                    <ul className={dropDown} ref={menuRef} onMouseLeave={ocultarDrop}>
+                    <ul className={`bg-[#303030] dark:bg-[#fafafa] text-[#fafafa] dark:text-[#303030]] ${dropDown}`} ref={menuRef} onMouseLeave={ocultarDrop}>
                          <li>
-                              <Link onClick={()=> cerrarMenu()} to="/infoClases" className="navLink">Info</Link>
+                              <Link onClick={()=> cerrarMenu()} to="/infoClases" className="navLink text-[#fafafa] dark:text-[#303030]">Info</Link>
                          </li>
 
                          <li>
-                              <Link onClick={()=> cerrarMenu()} to="/presupuestoClases" className="navLink">Presupuesto</Link>
+                              <Link onClick={()=> cerrarMenu()} to="/presupuestoClases" className="navLink text-[#fafafa] dark:text-[#303030]">Presupuesto</Link>
                          </li>
                     </ul>
                </div>

@@ -42,18 +42,18 @@ function PresupuestosMain() {
                <section id="infoClases">
                     <article className="bienvenida" data-aos="fade-right">
                          <div className="contenedorBienvenida">
-                              <h1 className="text-5xl text-[#303030] font-bold">¡Encontrá el presupuesto de las clases para este 2024!</h1>
+                              <h1 className="text-5xl text-[#303030] font-bold dark:text-[#fafafa]">¡Encontrá el presupuesto de las clases para este 2024!</h1>
 
-                              <p className="pt-6 text-sm text-[#303030] w-3/4">
+                              <p className="pt-6 text-sm text-[#303030] w-3/4 dark:text-[#fafafa]">
                                    ¿Querés saber los precios de cada clase o del mes completo? Estás en el lugar correcto, mirá los precios <span className="font-bold">completamente actualizados.</span>
                               </p>
 
-                              <p className="pt-6 text-sm text-[#303030] w-3/4">
+                              <p className="pt-6 text-sm text-[#303030] w-3/4 dark:text-[#fafafa]">
                                    Nota: el abono de las clases puede realizarse con MercadoPago, transferencia bancaria y tarjetas de débito.
                               </p>
 
-                              <p className="text-sm pt-6">
-                                   Chequeá todos los <Link to={"/metodosDePago"} className="font-bold text-[#303030] underline hover:text-[#6a6a6a]">métodos de pago disponibles.</Link>
+                              <p className="text-sm pt-6 dark:text-[#fafafa]">
+                                   Chequeá todos los <Link to={"/metodosDePago"} className="font-bold text-[#303030] underline hover:text-[#6a6a6a] dark:text-[#fff59b] dark:hover:text-[#fff59b]">métodos de pago disponibles.</Link>
                               </p>
                          </div>
 

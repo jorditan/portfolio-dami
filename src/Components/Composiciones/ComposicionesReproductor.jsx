@@ -8,6 +8,12 @@ import impsAudio from '../../assets/sound/Imps.mp3';
 import anxietyAudio from '../../assets/sound/anxiety.mp3';
 import instrumentoVAudio from '../../assets/sound/instrumentoV.mp3';
 import { useDispatch, useSelector } from 'react-redux';
+import Saturnalia from '../../assets/img/Saturnalia.webp'
+import Partituras from '../../assets/img/Partituras.webp'
+import Clarinete from '../../assets/img/Clarinete.webp'
+import Hormiguero from '../../assets/img/Hormiguero.webp'
+import Gradiente from '../../assets/img/Gradiente.webp'
+
 
 function ComposicionesReproductor() {
      useEffect(() => {
@@ -32,17 +38,17 @@ function ComposicionesReproductor() {
           }
      }
 
-     const atrapasueños = new Composicion('Atrapasueños', 'Saturnalia', 'Proyecto personal', 'col-span-1', atrapasueñosAudio, 1, false);
-     const imp = new Composicion('IMPS', 'Universidad', 'Composición II', 'col-span-1', impsAudio, 2, false);
-     const anxiety = new Composicion('Anxiety', 'Universidad', 'Composición II', 'col-span-1', anxietyAudio, 3, false);
-     const elHormiguero = new Composicion('El Hormiguero', 'Universidad', 'Composición II', 'col-span-2', elHormigueroAudio, 4, false);
-     const instrumentoV = new Composicion('InstrumentoV', 'Universidad', 'Instrumento-V', 'col-span-1', instrumentoVAudio, 5, false);
+     const atrapasueños = new Composicion('Atrapasueños', 'Saturnalia', 'Proyecto personal', 'col-span-1', atrapasueñosAudio, 1, Saturnalia);
+     const imp = new Composicion('IMPS', 'Universidad', 'Composición II', 'col-span-1', impsAudio, 2, Partituras );
+     const anxiety = new Composicion('Anxiety', 'Universidad', 'Composición II', 'col-span-1', anxietyAudio, 3, Gradiente );
+     const elHormiguero = new Composicion('El Hormiguero', 'Universidad', 'Composición II', 'col-span-2', elHormigueroAudio, 4, Hormiguero );
+     const instrumentoV = new Composicion('InstrumentoV', 'Universidad', 'Instrumento-V', 'col-span-1', instrumentoVAudio, 5, Clarinete );
 
 
      const composiciones = [atrapasueños, imp, anxiety, elHormiguero, instrumentoV];
 
      return (
-          <section className="contenedorCards grid gap-12">
+          <section className="contenedorCards grid gap-12 px-20 py-20">
                {
                     composiciones.map((composicion, index) => {
                          return (
@@ -53,6 +59,7 @@ function ComposicionesReproductor() {
                                    id={composicion.id}
                                    ancho={composicion.ancho}
                                    motivo={composicion.motivo}
+                                   img={composicion.img}
                                    estaSonando={estaSonando}
                                    cancionActual={cancionActual}
                               />

@@ -10,7 +10,7 @@
      }
 
      .infoComposiciones {
-          padding: 2em 6em 5em 6em;
+          padding: 2em 6em 0 6em;
 
           div:nth-child(even) {
                align-items: end;
@@ -21,7 +21,6 @@
 
 .contenedorCards {
      grid-template-columns: repeat(3, minmax(0, 1fr));
-     padding: 0 6em 5em 6em;
      width: 100%;
      height: auto;
 }

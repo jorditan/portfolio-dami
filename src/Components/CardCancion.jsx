@@ -1,4 +1,3 @@
-import ImagenCard from '../assets/img/ImagenCard.webp'
 import BotonReproduccion from './BotonReproduccion';
 import { Badge } from 'keep-react';
 import { IoSchool } from "react-icons/io5";
@@ -9,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { iniciarReproduccion, detenerReproduccion, playPausa } from '../Context/reducer';
 
 
-function CardCancion({ cancion, titulo, motivo, materia, ancho, id, cancionActual, estaSonando }) {
+function CardCancion({ cancion, titulo, motivo, materia, ancho, id, cancionActual, estaSonando, img }) {
 
      const dispatch = useDispatch();
 
@@ -41,10 +40,10 @@ function CardCancion({ cancion, titulo, motivo, materia, ancho, id, cancionActua
 
      return (
           <article className={`card bg-[#f1f1f1] h-[20em] w-full column hover:translate-y-[-10px] ease-in duration-200 ${ancho}`}>
-               <figure className='rounded-t-2xl'><img src={ImagenCard} alt="Guitarra" /></figure>
+               <figure className='rounded-t-2xl bg-[#303030]'><img src={img} alt="Guitarra" /></figure>
                <div className="card-body h-3/4">
                     <h2 className="card-title font-bold text-[#303030] text-2xl">{titulo}</h2>
-                    <p className='text-md text-[#303030] font-semibold'>
+                    <p className='text-xs text-[#303030] font-semibold'>
                          {materia}
                     </p>
                     <Badge

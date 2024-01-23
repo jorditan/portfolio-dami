@@ -115,4 +115,8 @@ i {
 
 .sombra {
   box-shadow: var(--sombra);
+}
+
+.opacidadMaxima {
+  opacity: 1;
 }/*# sourceMappingURL=utils.css.map */

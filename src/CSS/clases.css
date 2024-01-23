@@ -9,7 +9,7 @@
 }
 
 #detailsClases {
-  padding: 5em 4em 6em 4em;
+  padding: 2em 4em 6em 4em;
 }
 
 #bienvenida .contenedorBienvenida {
@@ -17,10 +17,6 @@
   height: 50%;
 }
 
-#detailsClases {
-  height: 50%;
-  padding-top: 6em;
-}
 #detailsClases .contenedorMotivos .motivo .imagenMotivo {
   height: 18em;
   width: 40%;
