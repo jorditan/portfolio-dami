@@ -1,6 +1,5 @@
 import Redes from '../Redes';
 import BotonCompartir from '../Compartir';
-import BotonSwitch from '../BotonSwitch';
 import { FaInfo } from "react-icons/fa"
 
 function InfoMain({ mostrarAlerta }) {

@@ -28,7 +28,7 @@ function MetodosDePago() {
                     </ul>
 
                     <p className='text-md text-[#303030] pt-6 w-full dark:text-[#fafafa]'>
-                        Nota: en caso de pagar con LemonCash o Binance porfavor contacteme previamente a pagar en la sección de <Link to="/presupuestoClases" className='font-bold hover:text-[#686868]'>presupuestos.</Link>
+                        Nota: en caso de pagar con LemonCash o Binance porfavor contacteme previamente a pagar en la sección de <Link to="/presupuestoClases" className='font-bold hover:text-[#686868] dark:text-[#fff59b] dark:hover:text-[#fffb59]'>presupuestos.</Link>
                     </p>
 
                 </section>

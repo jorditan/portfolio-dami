@@ -78,6 +78,10 @@ i {
      background-color: var(--color-secundario);
      transition: .4s all ease-out;
 
+     button {
+          color: var(--color-primario);
+     }
+
      .navList {
           .navItem {
                color: var(--color-primario);

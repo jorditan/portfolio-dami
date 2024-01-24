@@ -3,7 +3,7 @@ import { GoInfo } from "react-icons/go";
 import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { IoHome } from "react-icons/io5";
-
+import BotonSwitch from "./BotonSwitch";
 import DropDown from '../Components/DropDown';
 
 function NavBar() {
@@ -51,6 +51,7 @@ function NavBar() {
           <>
                <header>
                     <nav className={`navBar ${colorNav} ${opacidad}`}>
+                    <BotonSwitch />
                          <ul className={menuNav}>
                               <li className="navItem text text-[#303030]"><IoHome className="iconNav text-[#303030] dark:text-[#fafafa]" />
                                    <Link preventScrollReset={true} onClick={cerrarMenu} to="/" className="navLink text-[#303030] dark:text-[#fafafa]">Inicio</Link>

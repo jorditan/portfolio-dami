@@ -1,4 +1,3 @@
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
@@ -6,7 +5,6 @@ import CardPresentacion from '../CardPresentacion';
 import InfoMain from './InfoMain';
 import Alerta from '../Alert';
 import OfertaFlotante from '../OfertaFlotante';
-import BotonSwitch from '../BotonSwitch';
 
 function Main() {
      useEffect(() => {
@@ -36,7 +34,6 @@ function Main() {
                     <InfoMain mostrarAlerta={mostrarAlerta} />
                     <Alerta display={display} />
                     <OfertaFlotante/>
-                    <BotonSwitch />
                </section>
           </>
      );

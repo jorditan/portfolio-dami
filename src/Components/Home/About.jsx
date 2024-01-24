@@ -23,7 +23,7 @@ function About() {
                          </p>
                          <p className="font-semibold text-[#303030] dark:text-[#fafafa]">
                               Tengo 28 años y estoy estudiando la licenciatura en Música en la UNA (Universida Nacional de las Artes).
-                              Tengo experiencia dando clases a <span className='font-bold'>pequeños y grandes
+                              Tengo experiencia dando clases a <span className='font-bold text-[#1d1d1d] dark:text-[#fff59b]'>pequeños y grandes
                                    grupos de alumnos.</span> Se enseñar con diferentes métodos
                               y siempre priorizo el aprendizaje y la comodidad de mis
                               estudiantes.

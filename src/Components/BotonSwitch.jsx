@@ -1,5 +1,6 @@
-import { Toggle } from "keep-react";
 import { useEffect, useState } from "react";
+import { FaRegSun } from "react-icons/fa";
+import { IoMdMoon } from "react-icons/io";
 
 function BotonSwitch() {
 
@@ -19,6 +20,9 @@ function BotonSwitch() {
           }
      }, [theme]);
 
+     console.log(theme)
+
+
 
      const handleTheme = () => {
           setTheme(prevTheme => prevTheme == 'light' ? 'dark' : 'light');
@@ -26,7 +30,11 @@ function BotonSwitch() {
 
 
      return (
-          <Toggle  onClick={handleTheme} bgColor="slate" label="Toggle" size="lg" withIcon={true} className="botonSwtichs fixed bottom-10 top-16 right-4 shadow-md z-40" />
+          <button className="text-[#303030] dark:text-[#fafafa] pl-10 text-2xl" onClick={handleTheme}>
+               {
+                    theme == 'light' ? <FaRegSun /> : <IoMdMoon />
+               }
+          </button>
      );
 }
 

@@ -52,7 +52,7 @@ function PresupuestosMain() {
                                    Nota: el abono de las clases puede realizarse con MercadoPago, transferencia bancaria y tarjetas de débito.
                               </p>
 
-                              <p className="text-sm pt-6 dark:text-[#fafafa]">
+                              <p className="text-sm pt-6 dark:text-[#fafafa] text-[#303030]">
                                    Chequeá todos los <Link to={"/metodosDePago"} className="font-bold text-[#303030] underline hover:text-[#6a6a6a] dark:text-[#fff59b] dark:hover:text-[#fff59b]">métodos de pago disponibles.</Link>
                               </p>
                          </div>

@@ -52,9 +52,6 @@
   #detailsClases h2 {
     font-size: 3rem;
   }
-  #detailsClases .contenedorMotivos {
-    padding-top: 7em;
-  }
   #detailsClases .contenedorMotivos .motivo {
     flex-direction: column;
     height: auto;

@@ -76,6 +76,9 @@ i {
   transition: 0.4s all ease-out;
   opacity: 0.8;
 }
+.navBarNegra button {
+  color: var(--color-primario);
+}
 .navBarNegra .navList .navItem {
   color: var(--color-primario);
 }

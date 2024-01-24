@@ -92,7 +92,7 @@ export default function CardComponent({ dolar, info }) {
                          </Card.List>
                     </Card.Container>
                     <Card.Container>
-                         <button onClick={handleBuy} className="btn btn-outline mt-4 hover:bg-[#303030] w-full">Pagar</button>
+                         <button onClick={handleBuy} className="btn btn-outline mt-4 hover:bg-[#303030] text-[#303030] hover:text-[#fafafa] w-full">Pagar</button>
                          {preferenceId && <Wallet initialization={{ preferenceId }} />
 }
                     </Card.Container>
