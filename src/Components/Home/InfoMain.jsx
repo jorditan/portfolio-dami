@@ -5,7 +5,7 @@ import { FaInfo } from "react-icons/fa"
 function InfoMain({ mostrarAlerta }) {
      return (
           <div className="contenedorInfo">
-               <div className="info flex bg-[#303030] dark:bg-[#f0eded]">
+               <div className="info flex bg-[#303030] dark:bg-[#fafafa]">
                     <FaInfo className='botonInfo' />
                     <Redes />
                     <BotonCompartir mostrarAlerta={mostrarAlerta} />

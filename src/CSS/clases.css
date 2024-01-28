@@ -97,7 +97,7 @@
     font-size: 2rem;
   }
   #detailsClases .contenedorMotivos {
-    padding-top: 7em;
+    gap: 40px;
   }
   #detailsClases .contenedorMotivos .motivo {
     flex-direction: column;

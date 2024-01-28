@@ -284,7 +284,7 @@ header {
           height: 250px;
           border-radius: 30px;
           width: 30%;
-          margin: 1em 0 0 0;
+          margin: 2em 0 2em 0;
 
           img {
                border-radius: 46px;
@@ -299,9 +299,11 @@ header {
      }
 
      .contenedorTextoRep {
-          padding: 2em 0 1em 2em;
+          width: 100%;
+          padding-left: 2em;
           justify-content: center;
           align-items: center;
+          text-align: center;
      }
 
      .botones {
@@ -341,7 +343,14 @@ header {
                width: 100%;
           }
      }
-
+     
+     .contenedorReproductor {
+          .contenedorTextoRep {
+               align-items: flex-start;
+               justify-content: flex-start;
+               text-align: left;
+          }
+     }
 }
 
 @media screen and (max-width: 646px) {
@@ -370,12 +379,9 @@ header {
           }
 
           .contenedorTextoRep {
-               align-items: flex-start;
-
                p {
                     width: 80%;
                     font-size: 1em;
-                    text-align: left;
                }
           }
 
@@ -431,12 +437,11 @@ header {
      justify-content: center;
      align-items: flex-end;
      padding-top: 1em;
-     position: sticky;
      bottom: 0;
      padding-bottom: 1em;
 
      .info {
-          height: 3.2em;
+          height: 2.8em;
           width: 50%;
           border-radius: 10px;
           align-items: center;
