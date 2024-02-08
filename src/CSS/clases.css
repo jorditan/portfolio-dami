@@ -41,10 +41,16 @@
     padding-left: 2em;
     padding-right: 2em;
   }
+  #bienvenida .contenedorBienvenida h1 {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 658px) {
   #bienvenida .contenedorBienvenida h1 {
     font-size: 3rem;
+  }
+  #bienvenida .contenedorBienvenida p {
+    width: 100%;
   }
   #bienvenida #opiniones {
     flex-direction: column;
@@ -133,9 +139,6 @@
   }
   #detailsClases h2 {
     font-size: 1.8rem;
-  }
-  #detailsClases .contenedorMotivos {
-    padding-top: 7em;
   }
   #detailsClases .contenedorMotivos .motivo {
     flex-direction: column;
