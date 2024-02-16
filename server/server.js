@@ -9,15 +9,19 @@ const client = new MercadoPagoConfig({
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(cors({
+	origin: 'http://localhost:5174',
+	credentials: true,
+}));
 app.use(express.json());
+
 
 app.get("/", (req, res) => {
 	res.send("el servidor de mercadopago funciona");
 })
 
+
 app.post("/create_preference", async (req, res) => {
-	res.send("esto funciona")
 	try {
 		const body = {
 			items: [
