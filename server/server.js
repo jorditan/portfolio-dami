@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors({
-	origin: 'https://main--damiannahueljordan.netlify.app/presupuestoClases',
+	origin: 'https://main--damiannahueljordan.netlify.app',
 	credentials: true,
 }));
 app.use(express.json());
