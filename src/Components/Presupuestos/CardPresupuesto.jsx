@@ -26,17 +26,19 @@ export default function CardComponent({ dolar, info }) {
                });
 
                const { id } = response.data;
-               return id,
-               console.log(response.data);
+               return id
           } catch (error) {
                console.log(error)
           }
      };
 
+     
      const handleBuy = async () => {
           const id = await createPreference();
+          console.log(id)
           if (id) {
                setPreferenceId(id)
+               console.log(id);
           }
      }
 
