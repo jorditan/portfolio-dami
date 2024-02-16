@@ -18,7 +18,7 @@ function OfertaFlotante() {
                     <Popover.Description>Accede a esta única oferta del 15% de clases de música.</Popover.Description>
                     <Popover.Container>
                          <button className="mt-3 text-body-5 font-medium text-primary-400 underline underline-offset-[3px]">
-                              <Link to="/presupuestoClases">Ir a al oferta</Link>
+                              <Link to="/presupuestoClases">Ir a la oferta</Link>
                          </button>
                     </Popover.Container>
                     <Popover.Action>

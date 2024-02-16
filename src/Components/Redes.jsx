@@ -1,6 +1,7 @@
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 
 function Redes() {
@@ -17,6 +18,9 @@ function Redes() {
 
                     <li className="redesItem text-[#fafafa] dark:text-[#303030]">
                          <a href="https://www.facebook.com/damianjmusica" target="blank"><FaFacebook className="redesIcon"/></a>
+                    </li>
+                    <li className="redesItem text-[#fafafa] dark:text-[#303030]">
+                         <a href="https://wa.link/3uel8s" target="blank"><FaWhatsapp className="redesIcon"/></a>
                     </li>
                </ul>
           </>
