@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors({
-	origin: 'http://localhost:5174',
+	origin: 'https://main--damiannahueljordan.netlify.app/presupuestoClases',
 	credentials: true,
 }));
 app.use(express.json());
