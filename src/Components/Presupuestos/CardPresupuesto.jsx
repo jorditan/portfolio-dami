@@ -14,7 +14,7 @@ export default function CardComponent({ dolar, info }) {
      const precioNuevo = precioClase - descuento;
      const [preferenceId, setPreferenceId] = useState(null);
 
-     initMercadoPago('APP_USR-b973685f-30c9-4ba9-a891-18cf752b430f');
+     initMercadoPago('APP_USR-d4a9a905-fba5-4218-bff0-9423fe4838fb');
 
      const createPreference = async () => {
           try {
