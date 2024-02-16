@@ -5,6 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "build": "npm run your_build_script",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

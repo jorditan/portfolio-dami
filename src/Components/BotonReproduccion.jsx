@@ -6,9 +6,9 @@ function BotonReproduccion({ sonando, ponerPausa, ponerPlay, cancionActual, titu
      return (
           <>
                {
-                    sonando && cancionActual.titulo == titulo ? <FaPause className="cursor-pointer" onClick={ponerPausa} /> : <FaPlay className="cursor-pointer" onClick={ponerPlay} />
+                    sonando && cancionActual.titulo == titulo ? <FaPause className="cursor-pointer text-[#303030]" onClick={ponerPausa} /> : <FaPlay className="cursor-pointer text-[#303030]" onClick={ponerPlay} />
                }
           </>
      )
 }
-export default BotonReproduccion
+export default BotonReproduccion 
