@@ -18,7 +18,7 @@ export default function CardComponent({ dolar, info }) {
 
      const createPreference = async () => {
           try {
-               const response = await axios.post("http://localhost:3000/create_preference", {
+               const response = await axios.post("https://damian-nahuel-jordan.onrender.com", {
                     title: info.clase,
                     price: precioNuevo,
                     quantity: 1,

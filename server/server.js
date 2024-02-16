@@ -17,6 +17,7 @@ app.get("/", (req, res) => {
 })
 
 app.post("/create_preference", async (req, res) => {
+	res.send("esto funciona")
 	try {
 		const body = {
 			items: [
